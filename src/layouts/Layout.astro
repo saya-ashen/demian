@@ -14,7 +14,9 @@ const { title } = Astro.props;
 const baseUrl = import.meta.env.BASE_URL;
 const toSitePath = (href: string) => {
   const path = href === '/' ? '' : href.replace(/^\/+|\/+$/g, '');
-  return path ? `${baseUrl}${path}/` : baseUrl;
+  if (!path) return baseUrl;
+  const isFile = /\.[a-z0-9]+$/i.test(path);
+  return `${baseUrl}${path}${isFile ? '' : '/'}`;
 };
 const navigation = site.navigation.map((item) => ({
   ...item,
