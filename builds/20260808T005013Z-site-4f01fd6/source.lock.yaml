@@ -1,0 +1,58 @@
+version: 1
+knowledge_source:
+  name: llm-wiki-agent
+  path: /home/saya/workspace/llm-wiki-agent
+  repository: https://github.com/saya-ashen/llm-wiki-agent
+  branch: main
+  base_revision: 4f01fd6cb5b21be9d94657a402a2b3758ab5a942
+  revision_mode: snapshot-hash
+  clean_at_preflight: false
+  note: The detected dirty paths are Hindsight session bookkeeping under .pi/hindsight; selected wiki and raw factual files were read-only and individually hashed.
+  status_digest: ba7ddc797ecd2a9f92773abdbc213df79381681eafbfdf81cc1e9ee2e42b6c21
+  diff_digest: 2a0b9de7798ffff9a3eb9ab14abbf3da06a519da3274ae8bd5d7c4c16e78c80a
+  selected_file_digest: 3a0a4d97f2a95d382b1bf299d5928de9cfc4422c0c9057e871feebea6a908f93
+selected_files:
+  - path: wiki/index.md
+    sha256: 7d924de82bfbc419fde7033ec5076d5e88fc76ba00924d60caa09e864e79029d
+  - path: wiki/overview.md
+    sha256: 3169421c644b2b905babc734bb858bbd4de9f5a6e9469a0c406cab8e9ff7dbe6
+  - path: wiki/log.md
+    sha256: 80ac499c40d1eee86e82e04c4fe00fca4a2d72f383f5600485c492c4ae5f66bf
+  - path: wiki/sources/master-profile.md
+    sha256: 7da5a8d04a71bc62f2e4d5d3dc5bade4b0a71a56fbd91a43f8fa501a69b5eea5
+  - path: wiki/sources/current-status-update-2026-08.md
+    sha256: 323fd0ef4f5c21304fea1c1a5636b70f9d08a01b61d2730a7ef0d6188550f5b2
+  - path: wiki/sources/education-status-update-2026-06.md
+    sha256: bb05806debab8c87b15c27649b5bebfd6432be0ab6e129f239f244295c076e53
+  - path: wiki/sources/ewas-open-platform-pubmed-41243956.md
+    sha256: 5557fd6160e707a6c3e2250e13e1eb6b852afb10edd605474971f86aacc90abe
+  - path: wiki/sources/archived-cv-experience-facts.md
+    sha256: 34575e1983f83deba41b98ef52f865a67fe92746bfd171f905057e8e1f219578
+  - path: wiki/sources/ucas-ms-thesis.md
+    sha256: 0baeb20a0e766536f9d67bbaa94827269856b1e7568b317393796176e73f7147
+  - path: wiki/entities/DemianKong.md
+    sha256: cb67b5de6710f63555b237e2f86841a8db03982d4bbeef41d66cd7b2033ea45
+  - path: wiki/entities/Chrona.md
+    sha256: f26895d198c53e78a4b65b152fa6b83cfaae737016ddd19123f7ce2bc1c39082
+  - path: wiki/entities/Dingent.md
+    sha256: cb3fb3e69ffdd19f783ba4dcc4df42600660cc9476cd65dd31cf24d8f1d8d533
+  - path: wiki/entities/EWASAIAssistant.md
+    sha256: 76f9f3f605cd44e56ea98c1d3a18ca5bdc1b9b9e56f6b799d294323d10bf4f40
+  - path: wiki/entities/NationalGenomicsDataCenter.md
+    sha256: b6608b12b90e98f095e7bd69c8f8ab7dcb095e30e046f1ed1d88ec5b19cd09cc
+  - path: wiki/entities/UniversityOfChineseAcademyOfSciences.md
+    sha256: 5cbc9fa971507ebe639eeae2178336fff20b0bb1b1d98faefde9644f14658d7d
+  - path: wiki/entities/JilinUniversity.md
+    sha256: 3630f1be38956c18c444b800c055baca5000af4a7dbdc28d95c531b736485b5c
+  - path: wiki/concepts/AgenticBioinformatics.md
+    sha256: f90fce1fbcb140c985c518fef38cd1539c6fab631ddec076f2d0e4aca07903d1
+  - path: wiki/concepts/ResearchTrajectory.md
+    sha256: ac1a957657c2701872ec29743269c06794328a79e3574830e58dbaee77c5cea0
+  - path: wiki/concepts/AppliedAICareerDirection.md
+    sha256: e1b9b68156f9b780e4832bdb396f4ddec9251e5176b57a7a44e70cbdfce3267a
+  - path: wiki/concepts/LanguageToAction.md
+    sha256: 99e3383ae6e7e63d7357ddafbcd7a29a4964699acd886960c99dc356766a2307
+  - path: wiki/concepts/CoreProfile.md
+    sha256: 5d9664d38cbe1899ed94b31fb1299ec623e8a12eee1c41be0cc8b4e4a7d11ade
+  - path: wiki/concepts/ProfileFactGovernance.md
+    sha256: 80c6f4f95ccf10e8f24fcb6be13e242b548d8ad3b1bd4751ce7f7133b0f3aeea

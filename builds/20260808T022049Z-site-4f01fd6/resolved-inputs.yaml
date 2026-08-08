@@ -1,0 +1,29 @@
+version: 1
+artifact:
+  purpose: Remove the low-priority OmniExtract record from the public website while preserving source read-only policy.
+  audience: Research collaborators, Ph.D. admissions readers, and AI engineering collaborators.
+  language: en
+  output: generated/site-content.md and public website content files.
+selection:
+  include: Current Wiki-supported public profile, education, experience, projects, and publication facts except the user-retired OmniExtract record.
+  exclude:
+    - OmniExtract publication record
+    - private application data
+    - stale or superseded wording
+    - unverified GPA/rank
+    - unpublished thesis metrics
+inputs:
+  - path: artifact.yaml
+    role: artifact project specification
+  - path: spec/website.md
+    role: public content and privacy requirements
+  - path: proposals/20260808T022049Z-remove-omniextract.yaml
+    role: controlled source-change proposal; not factual evidence
+prior_artifact:
+  path: builds/20260808T005013Z-site-4f01fd6
+  use: diff and style continuity only
+knowledge_source:
+  path: /home/saya/workspace/llm-wiki-agent
+  revision_mode: snapshot-hash
+  base_revision: 4f01fd6cb5b21be9d94657a402a2b3758ab5a942
+  selected_file_digest: 3a0a4d97f2a95d382b1bf299d5928de9cfc4422c0c9057e871feebea6a908f93

@@ -1,0 +1,87 @@
+version: 1
+
+artifact:
+  name: demian-personal-website
+  type: website
+  purpose: Public personal research and engineering website derived from the LLM Wiki.
+  audience: Research collaborators, Ph.D. admissions readers, and AI engineering collaborators.
+  language: en
+  draft: generated/site-content.md
+
+knowledge_source:
+  path: /home/saya/workspace/llm-wiki-agent
+  repository: https://github.com/saya-ashen/llm-wiki-agent
+  revision: main
+  mode: read-only
+  index:
+    - wiki/index.md
+    - wiki/overview.md
+    - wiki/log.md
+  preferred_layers:
+    - wiki
+    - raw
+
+selectors:
+  include:
+    - public professional profile facts from wiki entities and reviewed sources
+    - completed or active projects with explicit current-status wording
+    - publication records supported by wiki source pages
+    - education and experience facts with explicit dates/status
+  exclude:
+    - confidentiality: private application profile
+    - visibility: internal-only
+    - stale or superseded wording
+    - unverified GPA, rank, contact records, and unpublished quantitative results
+    - facts with an explicit evidence gap that would materially affect public interpretation
+
+build_inputs:
+  - path: AGENTS.md
+    role: publication and privacy requirements
+  - path: README.md
+    role: artifact repository structure and commands
+  - path: content/profile.json
+    role: prior artifact structure only; not factual evidence
+  - path: content/projects/*.md
+    role: prior artifact structure and style only; not factual evidence
+  - path: content/publications/*.md
+    role: prior artifact structure and style only; not factual evidence
+
+requirements:
+  required_sections:
+    - home
+    - about
+    - education
+    - current direction
+    - experience timeline
+    - projects
+    - publications
+    - contact
+  max_words: null
+  max_pages: null
+
+presentation:
+  template: Astro content collections and existing site layout
+  tone: clear, concise, technically specific
+  emphasis:
+    - AI agents and LLM systems
+    - reliable execution and tool-driven workflows
+    - scientific AI and bioinformatics
+    - current Chrona development
+    - historically bounded NGDC, Dingent, and EWAS work
+
+policy:
+  verified_facts_only: true
+  require_claim_provenance: true
+  knowledge_base_read_only: true
+  require_human_review: true
+
+validation:
+  require_clean_source: false
+  revision_mode: snapshot-hash
+  fail_on_unsupported_claims: true
+  fail_on_private_content: true
+  fail_on_source_mutation: true
+
+publication:
+  path: published/site-content.md
+  require_human_review: true

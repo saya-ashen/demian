@@ -1,0 +1,43 @@
+---
+import { getEntry } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+
+const profile = await getEntry('profile', 'profile');
+if (!profile) throw new Error('Profile content is missing.');
+
+const { contact } = profile.data;
+---
+
+<Layout title={contact.title}>
+  <div class="contact-layout">
+    <div class="page-intro">
+      <p class="eyebrow">Open channel</p>
+      <h1>{contact.title}</h1>
+      <p>{contact.intro}</p>
+      <div class="note">
+        <p>{contact.note}</p>
+      </div>
+    </div>
+
+    <section class="panel contact-links" aria-label="Contact details">
+      {
+        contact.items.map((item) => (
+          <div class="contact-row">
+            <strong>{item.label}</strong>
+            {item.href ? (
+              <a
+                href={item.href}
+                target={item.external ? '_blank' : undefined}
+                rel={item.external ? 'noreferrer' : undefined}
+              >
+                {item.value}
+              </a>
+            ) : (
+              <span>{item.value}</span>
+            )}
+          </div>
+        ))
+      }
+    </section>
+  </div>
+</Layout>

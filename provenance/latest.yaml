@@ -1,0 +1,14 @@
+version: 1
+artifact: demian-personal-website
+latest_build_id: 20260808T022049Z-site-4f01fd6
+source:
+  path: /home/saya/workspace/llm-wiki-agent
+  revision_mode: snapshot-hash
+  base_revision: 4f01fd6cb5b21be9d94657a402a2b3758ab5a942
+  selected_file_digest: 3a0a4d97f2a95d382b1bf299d5928de9cfc4422c0c9057e871feebea6a908f93
+outputs:
+  generated: generated/site-content.md
+  run: builds/20260808T022049Z-site-4f01fd6
+  published: null
+review:
+  status: pending

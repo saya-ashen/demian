@@ -1,0 +1,78 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+
+const profile = await getEntry('profile', 'profile');
+if (!profile) throw new Error('Profile content is missing.');
+
+const { research } = profile.data;
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+const publications = (await getCollection('publications')).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+
+<Layout title={research.title}>
+  <div class="page-intro">
+    <p class="eyebrow">Selected work</p>
+    <h1>{research.title}</h1>
+    <p>{research.intro}</p>
+  </div>
+
+  <section aria-labelledby="projects-title">
+    <div class="section-heading">
+      <h2 id="projects-title">{research.projectsHeading}</h2>
+      <span class="kicker">Building in public</span>
+    </div>
+    <div class="card-grid">
+      {
+        projects.map(({ data }, index) => (
+          <article class="card">
+            <div class="card-top">
+              <p class="meta">Project / 0{index + 1}</p>
+              <span class="card-index">↗</span>
+            </div>
+            <h3>{data.title}</h3>
+            <p class="role"><strong>{data.role}</strong> · {data.period}</p>
+            <p>{data.description}</p>
+            {data.links.length > 0 && (
+              <div class="card-links">
+                {data.links.map((link) => (
+                  <a href={link.href} target="_blank" rel="noreferrer">{link.label}</a>
+                ))}
+              </div>
+            )}
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section aria-labelledby="publications-title">
+    <div class="section-heading">
+      <h2 id="publications-title">{research.publicationsHeading}</h2>
+      <span class="kicker">In the literature</span>
+    </div>
+    <div class="panel publications">
+      {
+        publications.map(({ data }) => (
+          <article class="publication">
+            <span class="publication-year">{data.year}</span>
+            <div>
+              <p class="publication-title">{data.title}</p>
+              <p>{data.authors}. <em>{data.journal}</em>, {data.volume}{data.pages ? `, ${data.pages}` : ''}.</p>
+              {data.links.length > 0 && (
+                <div class="card-links publication-links">
+                  {data.links.map((link) => (
+                    <a href={link.href} target="_blank" rel="noreferrer">{link.label}</a>
+                  ))}
+                </div>
+              )}
+            </div>
+          </article>
+        ))
+      }
+      <p class="muted" style="padding: 0 28px 24px; margin: 0;">{research.publicationsNote}</p>
+    </div>
+  </section>
+</Layout>

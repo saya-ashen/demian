@@ -1,0 +1,11 @@
+version: 1
+status: pending
+build_id: 20260808T022049Z-site-4f01fd6
+reviewer: null
+reviewed_at: null
+facts_decision: pending
+privacy_decision: pending
+presentation_decision: pending
+requested_changes: []
+publication_authorized: false
+source_proposal: proposals/20260808T022049Z-remove-omniextract.yaml

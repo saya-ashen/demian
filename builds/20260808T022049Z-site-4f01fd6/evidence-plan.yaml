@@ -1,0 +1,30 @@
+version: 1
+source_snapshot:
+  revision_mode: snapshot-hash
+  base_revision: 4f01fd6cb5b21be9d94657a402a2b3758ab5a942
+  selected_file_digest: 3a0a4d97f2a95d382b1bf299d5928de9cfc4422c0c9057e871feebea6a908f93
+sections:
+  home: verified
+  about: verified
+  experience: verified
+  projects: verified
+  publications:
+    status: reviewed
+    evidence:
+      - wiki/sources/ewas-open-platform-pubmed-41243956.md
+      - wiki/sources/master-profile.md
+      - wiki/sources/archived-cv-experience-facts.md
+      - wiki/entities/DemianKong.md
+    note: OmniExtract is intentionally excluded from this derivative per the user's current request; its source-removal proposal is separate and pending source-owner action.
+  contact: verified
+privacy:
+  excluded_private:
+    - application email addresses
+    - phone number
+    - date of birth
+    - address
+    - citizenship and gender
+    - referee contact records
+  excluded_unverified:
+    - GPA and academic rank
+    - unpublished thesis performance metrics

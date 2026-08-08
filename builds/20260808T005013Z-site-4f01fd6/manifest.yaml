@@ -1,0 +1,50 @@
+version: 1
+artifact:
+  name: demian-personal-website
+  type: website
+  purpose: Public personal research and engineering website derived from the LLM Wiki.
+  audience: Research collaborators, Ph.D. admissions readers, and AI engineering collaborators.
+  language: en
+  output_paths:
+    - content/profile.json
+    - content/projects/chrona.md
+    - content/projects/dingent.md
+    - content/projects/ewas-ai-assistant.md
+    - content/publications/ewas-open-platform.md
+    - content/publications/bioka.md
+    - content/publications/ngdc-2024.md
+    - content/publications/idog.md
+    - content/publications/ngdc-2025.md
+    - content/publications/omniextract.md
+    - src/content.config.ts
+    - src/pages/research.astro
+knowledge_source:
+  path: /home/saya/workspace/llm-wiki-agent
+  repository: https://github.com/saya-ashen/llm-wiki-agent
+  branch: main
+  base_revision: 4f01fd6cb5b21be9d94657a402a2b3758ab5a942
+  revision_mode: snapshot-hash
+  selected_file_digest: 3a0a4d97f2a95d382b1bf299d5928de9cfc4422c0c9057e871feebea6a908f93
+  working_tree:
+    status: dirty
+    dirty_paths:
+      - .pi/hindsight/retain-cursors.json
+      - .pi/hindsight/retain-receipts.json
+    status_digest: ba7ddc797ecd2a9f92773abdbc213df79381681eafbfdf81cc1e9ee2e42b6c21
+    diff_digest: 2a0b9de7798ffff9a3eb9ab14abbf3da06a519da3274ae8bd5d7c4c16e78c80a
+method:
+  selector: public professional facts from wiki entities and reviewed sources; current-status updates supersede stale CV wording
+  excluded: private application data, stale wording, unverified GPA/rank, unpublished thesis metrics
+outputs:
+  generated_site_content_sha256: 0723f15b81dfe174172cf24f6161e166f7362605d2d1ff2d5955534a18dc5a9b
+  immutable_artifact_sha256: 0723f15b81dfe174172cf24f6161e166f7362605d2d1ff2d5955534a18dc5a9b
+  claim_count: 24
+  unsupported_claim_count: 0
+validation:
+  build_command: npm run build
+  build_status: passed
+  target_existence_check: passed
+  privacy_scan: passed
+  source_mutation_check: passed
+  review_status: pending
+status: generated-needs-review

@@ -1,0 +1,63 @@
+version: 1
+source_snapshot:
+  revision_mode: snapshot-hash
+  base_revision: 4f01fd6cb5b21be9d94657a402a2b3758ab5a942
+  selected_file_digest: 3a0a4d97f2a95d382b1bf299d5928de9cfc4422c0c9057e871feebea6a908f93
+sections:
+  home:
+    status: verified
+    evidence:
+      - wiki/entities/DemianKong.md
+      - wiki/entities/Chrona.md
+      - wiki/concepts/AppliedAICareerDirection.md
+      - wiki/sources/education-status-update-2026-06.md
+  about:
+    status: verified
+    evidence:
+      - wiki/entities/DemianKong.md
+      - wiki/entities/UniversityOfChineseAcademyOfSciences.md
+      - wiki/entities/JilinUniversity.md
+      - wiki/concepts/ResearchTrajectory.md
+      - wiki/concepts/LanguageToAction.md
+      - wiki/sources/archived-cv-experience-facts.md
+  experience:
+    status: verified
+    evidence:
+      - wiki/sources/current-status-update-2026-08.md
+      - wiki/sources/archived-cv-experience-facts.md
+      - wiki/entities/NationalGenomicsDataCenter.md
+      - wiki/entities/Dingent.md
+      - wiki/entities/EWASAIAssistant.md
+      - wiki/entities/JilinUniversity.md
+  projects:
+    status: verified
+    evidence:
+      - wiki/entities/Chrona.md
+      - wiki/entities/Dingent.md
+      - wiki/entities/EWASAIAssistant.md
+      - wiki/sources/current-status-update-2026-08.md
+  publications:
+    status: partial
+    evidence:
+      - wiki/sources/ewas-open-platform-pubmed-41243956.md
+      - wiki/sources/master-profile.md
+      - wiki/sources/archived-cv-experience-facts.md
+      - wiki/entities/DemianKong.md
+    qualification: EWAS is verified by PubMed; the remaining records are source-supported profile/archival citations and OmniExtract is explicitly retained as a preprint record pending a fuller authoritative citation.
+  contact:
+    status: verified
+    evidence:
+      - wiki/entities/DemianKong.md
+privacy:
+  excluded_private:
+    - application email addresses
+    - phone number
+    - date of birth
+    - address
+    - citizenship and gender
+    - referee contact records
+    - mobility and application-form fields
+  excluded_unverified:
+    - GPA 3.81/4.0 as transcript-unverified
+    - academic rank
+    - unpublished thesis accuracy and latency metrics

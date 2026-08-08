@@ -1,0 +1,63 @@
+---
+import { getEntry } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+
+const profile = await getEntry('profile', 'profile');
+if (!profile) throw new Error('Profile content is missing.');
+
+const { about } = profile.data;
+---
+
+<Layout title={about.title}>
+  <div class="page-intro">
+    <p class="eyebrow">Profile</p>
+    <h1>{about.title}</h1>
+    <p>{about.intro}</p>
+  </div>
+
+  <div class="about-layout">
+    <aside class="about-sidebar">
+      <div class="panel">
+        <p class="kicker">{about.interestsHeading}</p>
+        <ul class="clean-list">
+          {about.interests.map((interest) => <li>{interest}</li>)}
+        </ul>
+      </div>
+      <div class="panel">
+        <p class="kicker">{about.toolkitHeading}</p>
+        <ul class="clean-list">
+          {about.toolkit.map((tool) => <li>{tool}</li>)}
+        </ul>
+      </div>
+      <div class="panel">
+        <p class="kicker">{about.recognitionHeading}</p>
+        <ul class="clean-list">
+          {about.recognition.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    </aside>
+
+    <section aria-labelledby="education-title">
+      <div class="section-heading">
+        <h2 id="education-title">{about.educationHeading}</h2>
+        <span class="kicker">The foundation</span>
+      </div>
+      <div class="stack">
+        {
+          about.education.map((entry) => (
+            <article class="card">
+              <p class="meta">Education</p>
+              <h3>{entry.institution}</h3>
+              <p class="muted">{entry.summary}</p>
+              {entry.details.length > 0 && (
+                <ul class="clean-list">
+                  {entry.details.map((detail) => <li>{detail}</li>)}
+                </ul>
+              )}
+            </article>
+          ))
+        }
+      </div>
+    </section>
+  </div>
+</Layout>

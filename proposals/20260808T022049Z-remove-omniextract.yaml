@@ -1,0 +1,26 @@
+version: 1
+proposal_id: 20260808T022049Z-remove-omniextract
+status: pending-source-owner-review
+requested_by: user
+request: Remove OmniExtract from the llm-wiki knowledge repository because the article is not important enough to retain.
+source_root: /home/saya/workspace/llm-wiki-agent
+write_policy: proposal-only; the knowledge source was not modified by this workflow.
+proposed_scope:
+  wiki_files:
+    - path: wiki/entities/DemianKong.md
+      change: Remove OmniExtract from the publication/contribution list.
+    - path: wiki/sources/master-profile.md
+      change: Remove OmniExtract from the source summary and publication references.
+    - path: wiki/sources/archived-cv-experience-facts.md
+      change: Remove OmniExtract from the archived publication-list summary.
+    - path: wiki/concepts/ApplicationReadiness.md
+      change: Remove OmniExtract from the incomplete-publication checklist if the source owner confirms it is intentionally retired.
+  raw_files:
+    - path: raw/personal-kb/master-profile.md
+      change: Remove the OmniExtract publication item from the archived master profile, or mark it retired according to the knowledge-base maintenance policy.
+reason: User states the article is not important for the public profile.
+consistency_checks_after_source_update:
+  - rebuild wiki index and graph if the repository workflow requires it
+  - verify no remaining OmniExtract references under wiki/ or raw/personal-kb/
+  - rebuild the website from the new source snapshot
+  - preserve the prior build record as immutable history

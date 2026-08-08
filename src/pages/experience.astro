@@ -1,0 +1,35 @@
+---
+import { getEntry } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+
+const profile = await getEntry('profile', 'profile');
+if (!profile) throw new Error('Profile content is missing.');
+
+const { experience } = profile.data;
+---
+
+<Layout title={experience.title}>
+  <div class="page-intro">
+    <p class="eyebrow">The path so far</p>
+    <h1>{experience.title}</h1>
+  </div>
+
+  <div class="timeline">
+    {
+      experience.entries.map((entry, index) => (
+        <article class="timeline-entry">
+          <div class="card">
+            <div class="card-top">
+              <p class="meta">0{index + 1}</p>
+              <p class="meta">{entry.summary}</p>
+            </div>
+            <h2>{entry.organization}</h2>
+            <ul class="clean-list">
+              {entry.highlights.map((highlight) => <li>{highlight}</li>)}
+            </ul>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</Layout>

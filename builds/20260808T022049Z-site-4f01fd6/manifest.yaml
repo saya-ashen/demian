@@ -1,0 +1,51 @@
+version: 1
+artifact:
+  name: demian-personal-website
+  type: website
+  purpose: Public personal research and engineering website derived from the LLM Wiki.
+  audience: Research collaborators, Ph.D. admissions readers, and AI engineering collaborators.
+  language: en
+  output_paths:
+    - content/profile.json
+    - content/projects/chrona.md
+    - content/projects/dingent.md
+    - content/projects/ewas-ai-assistant.md
+    - content/publications/ewas-open-platform.md
+    - content/publications/bioka.md
+    - content/publications/ngdc-2024.md
+    - content/publications/idog.md
+    - content/publications/ngdc-2025.md
+    - src/content.config.ts
+    - src/pages/research.astro
+knowledge_source:
+  path: /home/saya/workspace/llm-wiki-agent
+  repository: https://github.com/saya-ashen/llm-wiki-agent
+  branch: main
+  base_revision: 4f01fd6cb5b21be9d94657a402a2b3758ab5a942
+  revision_mode: snapshot-hash
+  selected_file_digest: 3a0a4d97f2a95d382b1bf299d5928de9cfc4422c0c9057e871feebea6a908f93
+  working_tree:
+    status: dirty
+    dirty_paths:
+      - .pi/hindsight/retain-cursors.json
+      - .pi/hindsight/retain-receipts.json
+    status_digest: ba7ddc797ecd2a9f92773abdbc213df79381681eafbfdf81cc1e9ee2e42b6c21
+    diff_digest: 2a0b9de7798ffff9a3eb9ab14abbf3da06a519da3274ae8bd5d7c4c16e78c80a
+method:
+  selector: public professional facts from wiki entities and reviewed sources, excluding the user-retired OmniExtract record
+  excluded: private application data, stale wording, unverified GPA/rank, unpublished thesis metrics, OmniExtract
+outputs:
+  generated_site_content_sha256: 82fbae6e0c1643cc5b3b5d79f423bcd50ac7f87cff83d1e07fe4d54304d31b18
+  immutable_artifact_sha256: 82fbae6e0c1643cc5b3b5d79f423bcd50ac7f87cff83d1e07fe4d54304d31b18
+  claim_count: 23
+  unsupported_claim_count: 0
+  source_proposal: proposals/20260808T022049Z-remove-omniextract.yaml
+validation:
+  build_command: npm run build
+  build_status: passed
+  target_existence_check: passed
+  privacy_scan: passed
+  source_mutation_check: passed
+  omniextract_absence_check: passed
+  review_status: pending
+status: generated-needs-review

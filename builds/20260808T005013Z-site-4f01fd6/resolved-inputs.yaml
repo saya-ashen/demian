@@ -1,0 +1,56 @@
+version: 1
+artifact:
+  purpose: Update the public Astro personal website from the current LLM Wiki synthesis.
+  audience: Research collaborators, Ph.D. admissions readers, and AI engineering collaborators.
+  language: en
+  output: generated/site-content.md and the public website content files listed in manifest.yaml.
+requirements:
+  sections:
+    - Home positioning and current focus
+    - Completed education and transcript limits
+    - Current status and historical experience timeline
+    - Chrona, Dingent, and EWAS AI Assistant projects
+    - Source-supported publication list
+    - Public GitHub contact only
+selection:
+  include:
+    - wiki/entities/DemianKong.md
+    - wiki/entities/Chrona.md
+    - wiki/entities/Dingent.md
+    - wiki/entities/EWASAIAssistant.md
+    - wiki/entities/NationalGenomicsDataCenter.md
+    - wiki/entities/UniversityOfChineseAcademyOfSciences.md
+    - wiki/entities/JilinUniversity.md
+    - wiki/sources/current-status-update-2026-08.md
+    - wiki/sources/education-status-update-2026-06.md
+    - wiki/sources/master-profile.md
+    - wiki/sources/archived-cv-experience-facts.md
+    - wiki/sources/ewas-open-platform-pubmed-41243956.md
+    - wiki/sources/ucas-ms-thesis.md
+    - wiki/concepts/AgenticBioinformatics.md
+    - wiki/concepts/ResearchTrajectory.md
+    - wiki/concepts/AppliedAICareerDirection.md
+    - wiki/concepts/LanguageToAction.md
+  exclude:
+    - private application data
+    - contact records without public-professional approval
+    - stale Present/Expected/Under review wording
+    - unverified GPA and rank
+    - unpublished thesis metrics
+    - Chrona start date, exact title, employer, adoption, and production claims
+inputs:
+  - path: inputs/website-brief.md
+    sha256: 1d4b9d00d6db0d0cb0b29d1bc415bfbb7fc77a7d5b6f41e7be8f783c995fd21e
+    role: requirements
+  - path: AGENTS.md
+    role: public repository and privacy policy
+  - path: spec/website.md
+    role: artifact specification
+prior_artifact:
+  paths:
+    - content/profile.json
+    - content/projects/*.md
+    - content/publications/*.md
+  use: structure and diff only; not factual evidence
+model:
+  requested: not recorded by the build interface

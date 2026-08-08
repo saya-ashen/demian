@@ -1,11 +1,62 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import { getEntry } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const profile = await getEntry('profile', 'profile');
+if (!profile) throw new Error('Profile content is missing.');
+
+const { home } = profile.data;
 ---
 
-<Layout>
-	<Welcome />
+<Layout title={home.title}>
+  <section class="hero" aria-labelledby="home-title">
+    <div class="hero-copy">
+      <p class="eyebrow">Research · Systems · Biology</p>
+      <h1 id="home-title">{home.name}</h1>
+      <p class="headline">{home.headline}</p>
+      <p class="lede">{home.bio}</p>
+      <div class="hero-actions">
+        <a class="button" href="/research">Explore my work</a>
+        <a class="button secondary" href="/contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="orbit"></div>
+      <div class="art-label">
+        <strong>Where biology meets intelligent systems.</strong>
+        <span>01 / 04</span>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="highlights-title">
+    <div class="section-heading">
+      <h2 id="highlights-title">{home.highlightsHeading}</h2>
+      <span class="kicker">At a glance</span>
+    </div>
+    <div class="home-grid">
+      <div class="panel bio-card">
+        <p>{home.bio}</p>
+      </div>
+      <div class="panel">
+        <ul class="clean-list">
+          {home.highlights.map((highlight) => <li>{highlight}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="links-title">
+    <div class="section-heading">
+      <h2 id="links-title">{home.quickLinksHeading}</h2>
+      <span class="kicker">Keep exploring</span>
+    </div>
+    <div class="panel">
+      <ul class="link-list">
+        {home.quickLinks.map((link) => (
+          <li><a href={link.href}>{link.label}</a></li>
+        ))}
+      </ul>
+    </div>
+  </section>
 </Layout>

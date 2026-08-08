@@ -1,0 +1,150 @@
+{
+  "profile": {
+    "site": {
+      "title": "Demian Kong",
+      "description": "Demian Kong — AI agents, LLM systems, and scientific data.",
+      "navigation": [
+        { "label": "About", "href": "/about" },
+        { "label": "Research", "href": "/research" },
+        { "label": "Experience", "href": "/experience" },
+        { "label": "Contact", "href": "/contact" }
+      ]
+    },
+    "home": {
+      "title": "Home",
+      "name": "Demian Kong",
+      "headline": "AI Agents & LLM Systems · Scientific AI",
+      "bio": "I build AI systems that turn complex data and tasks into inspectable, executable workflows. My work connects agent architecture, reliable tool use, and scientific data systems, with current development focused on Chrona.",
+      "highlightsHeading": "Current focus",
+      "highlights": [
+        "M.S. in Bioinformatics from UCAS, completed in June 2026.",
+        "Developing Chrona, a local-first AI work executor for planning, scheduling, execution, and recovery.",
+        "Preparing Ph.D. applications centered on AI agents and LLM systems; scientific AI remains a secondary direction."
+      ],
+      "quickLinksHeading": "Explore",
+      "quickLinks": [
+        { "label": "Research and Publications", "href": "/research" },
+        { "label": "Experience Timeline", "href": "/experience" },
+        { "label": "Education and Research Interests", "href": "/about" }
+      ]
+    },
+    "about": {
+      "title": "About",
+      "intro": "I am an AI engineer and bioinformatics M.S. graduate working at the intersection of LLM agents, scientific data systems, and reliable software execution. My path moves from pharmacy and experimental biomedical research into computational biology and agentic application engineering.",
+      "educationHeading": "Education",
+      "education": [
+        {
+          "institution": "University of Chinese Academy of Sciences (UCAS)",
+          "summary": "M.S. in Bioinformatics, 2023 – 2026, graduated June 2026",
+          "details": [
+            "Official transcripts record 16 completed courses and 30.0 total credits.",
+            "The Chinese transcript identifies 23.0 degree-course credits; neither transcript reports GPA or rank.",
+            "Thesis: Development of Bioinformatics Data Retrieval Technology and Configurable Agent Framework Based on Large Language Models."
+          ]
+        },
+        {
+          "institution": "Jilin University",
+          "summary": "B.S. in Pharmacy, 2019 – 2023",
+          "details": [
+            "Undergraduate research included hepatic-fibrosis biology, MKP5 studies, chemical synthesis, and single-crystal X-ray crystallography."
+          ]
+        }
+      ],
+      "interestsHeading": "Research interests",
+      "interests": [
+        "AI agents and LLM systems: planning, tool use, state management, and reliable execution",
+        "Human-governed automation and the progression from language to structured actions, policies, and world models",
+        "Scientific AI and bioinformatics: natural-language access, Text-to-SQL, retrieval, and multi-omics data integration"
+      ],
+      "toolkitHeading": "Selected toolkit",
+      "toolkit": [
+        "Python, TypeScript/JavaScript, SQL, Bash, and Linux",
+        "LangChain/LangGraph, FastAPI, React, Next.js, Vue, and MCP integration",
+        "PyTorch, Pandas, NumPy, Docker, Git, and data-oriented application systems"
+      ],
+      "recognitionHeading": "Recognition",
+      "recognition": [
+        "Provincial-level Innovation and Entrepreneurship Training Program honor at Jilin University."
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "intro": "I am currently preparing Ph.D. applications focused on AI agents and LLM systems, and I am open to research and engineering conversations.",
+      "items": [
+        {
+          "label": "GitHub",
+          "value": "github.com/saya-ashen",
+          "href": "https://github.com/saya-ashen",
+          "external": true
+        }
+      ],
+      "note": "For a concise view of the current work, start with Chrona on the Research page. Scientific AI and bioinformatics remain important secondary application domains."
+    },
+    "experience": {
+      "title": "Experience",
+      "entries": [
+        {
+          "organization": "Chrona",
+          "summary": "Current application development · Active development · No formal employer",
+          "highlights": [
+            "Building a local-first AI work executor around the loop Task → Plan → Schedule → Execute → Review/Recover.",
+            "Exploring explicit approval boundaries, observable execution state, recoverable failures, and preserved results/evidence.",
+            "Current repository evidence describes version 0.2.0 alpha/local-development software, not a stable production release."
+          ]
+        },
+        {
+          "organization": "National Genomics Data Center (NGDC), CNCB",
+          "summary": "Graduate Researcher · 2023 – June 2026 · Beijing, China",
+          "highlights": [
+            "Built AI-driven conversational agents with LangGraph and FastAPI for natural-language access to genomic and epigenomic databases.",
+            "Contributed to iDog through multi-omics pipelines and chatbot development.",
+            "Architected the EWAS AI Assistant as a multi-stage Text-to-SQL workflow with retrieval, synthesis, and interactive visual exploration.",
+            "Contributed to BioKA by curating and integrating biomarker data from more than 20 public resources."
+          ]
+        },
+        {
+          "organization": "Dingent",
+          "summary": "Historical Lead Architect and Maintainer · 2024 – June 2026 · Technical support thereafter",
+          "highlights": [
+            "Led and maintained an open-source, general-purpose LLM-agent development framework through M.S. graduation.",
+            "Worked with a LangGraph backend, Next.js chat interface, React administration UI, modular plugins, and UI-based configuration.",
+            "The project was transferred to the group at graduation; the current relationship is technical support only."
+          ]
+        },
+        {
+          "organization": "EWAS AI Assistant",
+          "summary": "Historical Developer · 2024 – June 2026 · NGDC BioAgent Portal",
+          "highlights": [
+            "Developed a natural-language data-access system for the EWAS Open Platform during the M.S. period.",
+            "Connected intent parsing, SQL generation, data retrieval, and LLM synthesis with LangChain/LangGraph and FastAPI.",
+            "Supported interactive radar, violin, and line visualizations; personal project work ended at M.S. graduation."
+          ]
+        },
+        {
+          "organization": "Jilin University",
+          "summary": "Thesis Student · 2022 – 2023 · Jilin, China",
+          "highlights": [
+            "Established a CCl4-induced hepatic-fibrosis model for MKP5 research.",
+            "Performed mechanistic studies using retroviral overexpression, RNA-seq, and GO/KEGG enrichment.",
+            "Applied qRT-PCR, Western blot, and H&E/Masson’s histology for phenotype evaluation."
+          ]
+        },
+        {
+          "organization": "Jilin University",
+          "summary": "Undergraduate Researcher · 2021 – 2022 · Jilin, China",
+          "highlights": [
+            "Completed synthesis and crystallographic study of a substituted pyrano[3,2-c]chromene compound.",
+            "Determined absolute configuration through single-crystal X-ray diffraction."
+          ]
+        }
+      ]
+    },
+    "research": {
+      "title": "Research",
+      "intro": "My work has progressed from scientific data-access systems to general-purpose AI work execution, with a continuing interest in reliable, inspectable agent workflows.",
+      "projectsHeading": "Projects",
+      "publicationsHeading": "Selected Publications",
+      "publicationsNote": "Publication metadata is regenerated from the current Wiki snapshot. The EWAS Open Platform record uses the verified 2026 Nucleic Acids Research citation."
+    }
+  }
+}
