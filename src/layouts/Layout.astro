@@ -11,6 +11,15 @@ if (!profile) throw new Error('Profile content is missing.');
 
 const { site } = profile.data;
 const { title } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL;
+const toSitePath = (href: string) => {
+  const path = href === '/' ? '' : href.replace(/^\/+|\/+$/g, '');
+  return path ? `${baseUrl}${path}/` : baseUrl;
+};
+const navigation = site.navigation.map((item) => ({
+  ...item,
+  href: toSitePath(item.href),
+}));
 const documentTitle = title ? `${title} | ${site.title}` : site.title;
 const initials = site.title
   .split(' ')
@@ -18,7 +27,7 @@ const initials = site.title
   .join('')
   .slice(0, 2)
   .toUpperCase();
-const currentPath = Astro.url.pathname;
+const currentPath = Astro.url.pathname.replace(/\/+$/, '') || '/';
 ---
 
 <!doctype html>
@@ -26,8 +35,8 @@ const currentPath = Astro.url.pathname;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/template-assets/favicon.svg" />
-    <link rel="icon" href="/template-assets/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href={`${baseUrl}template-assets/favicon.svg`} />
+    <link rel="icon" href={`${baseUrl}template-assets/favicon.ico`} />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={site.description} />
     <title>{documentTitle}</title>
@@ -36,16 +45,16 @@ const currentPath = Astro.url.pathname;
     <header class="site-header">
       <div class="container">
         <nav aria-label="Primary navigation">
-          <a class="brand" href="/">
+          <a class="brand" href={baseUrl}>
             <span class="brand-mark" aria-hidden="true">{initials}</span>
             <span>{site.title}</span>
           </a>
           {
-            site.navigation.map((item) => (
+            navigation.map((item) => (
               <a
                 class="nav-link"
                 href={item.href}
-                aria-current={currentPath === item.href ? 'page' : undefined}
+                aria-current={currentPath === item.href.replace(/\/+$/, '') ? 'page' : undefined}
               >
                 {item.label}
               </a>

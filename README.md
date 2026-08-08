@@ -31,3 +31,11 @@ npm run preview
 ```
 
 The production build is written to `dist/` and is not committed.
+
+## Deployment
+
+GitHub Pages deploys through `.github/workflows/publish-website.yml` on pushes to `main`.
+
+The site is configured for the project URL:
+
+`https://saya-ashen.github.io/demian/`

@@ -6,6 +6,11 @@ const profile = await getEntry('profile', 'profile');
 if (!profile) throw new Error('Profile content is missing.');
 
 const { home } = profile.data;
+const baseUrl = import.meta.env.BASE_URL;
+const toSitePath = (href: string) => {
+  const path = href === '/' ? '' : href.replace(/^\/+|\/+$/g, '');
+  return path ? `${baseUrl}${path}/` : baseUrl;
+};
 ---
 
 <Layout title={home.title}>
@@ -16,8 +21,8 @@ const { home } = profile.data;
       <p class="headline">{home.headline}</p>
       <p class="lede">{home.bio}</p>
       <div class="hero-actions">
-        <a class="button" href="/research">Explore my work</a>
-        <a class="button secondary" href="/contact">Get in touch</a>
+        <a class="button" href={toSitePath('/research')}>Explore my work</a>
+        <a class="button secondary" href={toSitePath('/contact')}>Get in touch</a>
       </div>
     </div>
     <div class="hero-art" aria-hidden="true">
@@ -54,7 +59,7 @@ const { home } = profile.data;
     <div class="panel">
       <ul class="link-list">
         {home.quickLinks.map((link) => (
-          <li><a href={link.href}>{link.label}</a></li>
+          <li><a href={toSitePath(link.href)}>{link.label}</a></li>
         ))}
       </ul>
     </div>
