@@ -8,15 +8,18 @@ Include current and historical facts explicitly recorded in the Wiki's entity, c
 
 ## Public privacy policy
 
-Only use public professional links and public-facing project or publication facts. Exclude application emails, school emails, phone numbers, date of birth, address, citizenship, referee records, mobility information, and other private application data. Exclude unpublished thesis metrics and unverified GPA/rank from public pages. Do not infer Chrona's start date, formal title, employer, users, deployment, or adoption.
+Only use public professional links and public-facing project or publication facts. Contact details, language-test results, and unpublished project evaluations may be included only after the user approves the exact facts for the public repository and website and the facts are admitted to the knowledge source. The user approved publication of IELTS 7.0 and the specified EWAS and Dingent evaluation claims on 2026-09-03. Exclude all other unapproved application emails, school emails, phone numbers, date of birth, address, citizenship, referee records, mobility information, and private application data. Exclude GPA and rank unless separately approved for public release. Do not infer Chrona's start date, formal title, employer, users, deployment, or adoption.
 
 ## Required content coverage
 
 - Home: current identity, current research/engineering direction, and current project.
 - About: completed education, transcript-backed course/credit summary, trajectory, and research interests.
 - Experience: current post-graduation status and bounded historical timeline.
-- Research: Chrona, Dingent, EWAS AI Assistant, and the verified publication record plus the source-supported publication list.
-- Contact: public GitHub and collaboration/application direction without private contact fields.
+- Research: Chrona, Dingent, EWAS AI Assistant, the Dingent preprint, the verified publication record, and the source-supported publication list.
+- Contact: public GitHub, any exact-address email approved for public release, and collaboration/application direction without other private contact fields.
+- Public resume: one-page English PDF with the same public-release boundary, current Chrona v0.3.1 status, qualified project metrics, first-author preprint, and both joint-first-author publications.
+
+Project metrics must be labeled as project/thesis evaluation evidence and must not be presented as journal-reported results. Dingent wording must preserve the June 2026 handover and avoid implying post-handover control of CNCB resources.
 
 ## Validation commands
 

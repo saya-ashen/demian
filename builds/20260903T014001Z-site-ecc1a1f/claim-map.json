@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "artifact": "builds/20260903T014001Z-site-ecc1a1f/artifact.md",
+  "build_id": "20260903T014001Z-site-ecc1a1f",
+  "additional_artifacts": [
+    "builds/20260903T014001Z-site-ecc1a1f/resume-en.md",
+    "builds/20260903T014001Z-site-ecc1a1f/resume-en.typ",
+    "builds/20260903T014001Z-site-ecc1a1f/resume-en.pdf"
+  ],
+  "claims": [
+    {
+      "id": "claim-001",
+      "locations": ["content/profile.json:home/about", "generated/site-content.md:Positioning", "resume-en.md:Profile"],
+      "text": "Demian Kong is a bioinformatics M.S. graduate and AI engineer whose work connects LLM agents, scientific data systems, and reliable execution.",
+      "transformation": "synthesis",
+      "method": "Combined governed profile and research-trajectory summaries without adding a title or employer.",
+      "sources": [
+        {"knowledge_id": "entity.DemianKong", "path": "wiki/entities/DemianKong.md", "sha256": "b5c07026707892be0a2dc83163ba5dca862b53ca982314f51b28872110b33b12"},
+        {"knowledge_id": "concept.ResearchTrajectory", "path": "wiki/concepts/ResearchTrajectory.md", "sha256": "22959be99fb6d2f734cd048489896b65d657f45275abd6c9dd9db39167c1c9c7"}
+      ],
+      "evidence_status": "reviewed",
+      "confidence": "high",
+      "visibility": "public-professional",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-002",
+      "locations": ["content/profile.json:home/contact", "generated/site-content.md:Current status"],
+      "text": "The current direction prioritizes AI agents and LLM systems; scientific AI is secondary, Ph.D. applications are being prepared, and there is no formal employer.",
+      "transformation": "paraphrase",
+      "sources": [
+        {"knowledge_id": "concept.AppliedAICareerDirection", "path": "wiki/concepts/AppliedAICareerDirection.md", "sha256": "20a970bfff3e1e8f297cadacdbeebbeb7e1134f32d85514b05e657e8fd478889"},
+        {"knowledge_id": "source.current-status-update-2026-08", "path": "wiki/sources/current-status-update-2026-08.md", "sha256": "323fd0ef4f5c21304fea1c1a5636b70f9d08a01b61d2730a7ef0d6188550f5b2"}
+      ],
+      "evidence_status": "user-confirmed",
+      "confidence": "high",
+      "visibility": "public-professional",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-003",
+      "locations": ["content/profile.json:about.education[0]", "generated/site-content.md:Education", "resume-en.md:Education"],
+      "text": "M.S. in Bioinformatics, University of Chinese Academy of Sciences, 2023–2026; graduated June 2026.",
+      "transformation": "direct",
+      "sources": [
+        {"knowledge_id": "entity.UniversityOfChineseAcademyOfSciences", "path": "wiki/entities/UniversityOfChineseAcademyOfSciences.md", "sha256": "5cbc9fa971507ebe639eeae2178336fff20b0bb1b1d98faefde9644f14658d7d"},
+        {"knowledge_id": "source.education-status-update-2026-06", "path": "wiki/sources/education-status-update-2026-06.md", "sha256": "bb05806debab8c87b15c27649b5bebfd6432be0ab6e129f239f244295c076e53"}
+      ],
+      "evidence_status": "verified",
+      "confidence": "high",
+      "visibility": "public-professional",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-004",
+      "locations": ["content/profile.json:about.education[0].details", "generated/site-content.md:Education"],
+      "text": "The official graduate transcripts record 16 completed courses and 30.0 total credits; the Chinese transcript identifies 23.0 degree-course credits, and neither transcript reports GPA or rank.",
+      "transformation": "aggregation",
+      "sources": [
+        {"knowledge_id": "source.ucas-ms-transcript-zh", "path": "wiki/sources/ucas-ms-transcript-zh.md", "sha256": "b9104f6d7a9e8f3f7832adeee72f20ef0b7db475648db5db1252a978c2ab64bb"},
+        {"knowledge_id": "source.ucas-ms-transcript-en", "path": "wiki/sources/ucas-ms-transcript-en.md", "sha256": "4b5dc2932e8f8d66a34a4681f922f6d3c5d5c0ad9aa4c9ec565e337fe83b6131"}
+      ],
+      "evidence_status": "verified",
+      "confidence": "high",
+      "visibility": "public-summary-of-restricted-source",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-005",
+      "locations": ["content/profile.json:about.education[1]", "content/profile.json:experience[Jilin]", "resume-en.md:Education/Research Experience"],
+      "text": "B.S. in Pharmacy, Jilin University, 2019–2023, with undergraduate hepatic-fibrosis/MKP5, synthesis, and crystallography research.",
+      "transformation": "aggregation",
+      "sources": [
+        {"knowledge_id": "entity.JilinUniversity", "path": "wiki/entities/JilinUniversity.md", "sha256": "3630f1be38956c18c444b800c055baca5000af4a7dbdc28d95c531b736485b5c"},
+        {"knowledge_id": "source.archived-cv-experience-facts", "path": "wiki/sources/archived-cv-experience-facts.md", "sha256": "8c3f598da6631d71c2e535172bd31d9d77edac4e85bb9fd25ea898f17cd710e2"}
+      ],
+      "evidence_status": "reviewed",
+      "confidence": "medium",
+      "visibility": "public-professional",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-006",
+      "locations": ["content/profile.json:contact", "generated/site-content.md:Public contact", "resume-en.md:header"],
+      "text": "The selected email, GitHub profile, and personal website are approved public contact links.",
+      "transformation": "direct",
+      "sources": [
+        {"knowledge_id": "source.public-profile-update-2026-09", "path": "wiki/sources/public-profile-update-2026-09.md", "sha256": "679beb6c173fca9d22a46b29a2cfbab48a22482c8b9fc4572fa41f81c2645fdf"},
+        {"knowledge_id": "entity.DemianKong", "path": "wiki/entities/DemianKong.md", "sha256": "b5c07026707892be0a2dc83163ba5dca862b53ca982314f51b28872110b33b12"}
+      ],
+      "evidence_status": "user-confirmed",
+      "confidence": "high",
+      "visibility": "public-approved",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-007",
+      "locations": ["content/profile.json:about.recognition", "generated/site-content.md:Education and credentials", "resume-en.md:Technical Skills & Recognition"],
+      "text": "IELTS overall score: 7.0.",
+      "transformation": "direct",
+      "sources": [
+        {"knowledge_id": "source.public-profile-update-2026-09", "path": "wiki/sources/public-profile-update-2026-09.md", "sha256": "679beb6c173fca9d22a46b29a2cfbab48a22482c8b9fc4572fa41f81c2645fdf"}
+      ],
+      "evidence_status": "user-confirmed",
+      "confidence": "high",
+      "visibility": "public-approved",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-008",
+      "locations": ["content/profile.json:about.recognition", "resume-en.md:Technical Skills & Recognition"],
+      "text": "Provincial Undergraduate Innovation and Entrepreneurship Training Program recognition at Jilin University.",
+      "transformation": "paraphrase",
+      "sources": [
+        {"knowledge_id": "source.master-profile", "path": "wiki/sources/master-profile.md", "sha256": "d522fffc2b5d72a3894370bacc8ccff1a4ef3ee1c061c0f37f22ef886e3d5549"}
+      ],
+      "evidence_status": "reviewed",
+      "confidence": "medium",
+      "visibility": "public-professional",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-009",
+      "locations": ["content/profile.json:home/experience", "content/projects/chrona.md", "resume-en.md:Chrona"],
+      "text": "Chrona is a local-first AI work executor organized around Task → Plan → Schedule → Execute → Review/Recover with approval, observable-state, evidence, and recovery emphasis.",
+      "transformation": "paraphrase",
+      "sources": [
+        {"knowledge_id": "entity.Chrona", "path": "wiki/entities/Chrona.md", "sha256": "37c7c6fb91344a07cd85aca65ce880c83889a346d92419a14399c9be0b819536"}
+      ],
+      "evidence_status": "reviewed",
+      "confidence": "high",
+      "visibility": "public-professional",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-010",
+      "locations": ["content/profile.json:home/experience", "content/projects/chrona.md", "resume-en.md:Chrona"],
+      "text": "Chrona v0.3.1 is the current public alpha release published on 2026-09-02; it is not presented as stable production software.",
+      "transformation": "direct",
+      "sources": [
+        {"knowledge_id": "source.public-profile-update-2026-09", "path": "wiki/sources/public-profile-update-2026-09.md", "sha256": "679beb6c173fca9d22a46b29a2cfbab48a22482c8b9fc4572fa41f81c2645fdf"},
+        {"knowledge_id": "entity.Chrona", "path": "wiki/entities/Chrona.md", "sha256": "37c7c6fb91344a07cd85aca65ce880c83889a346d92419a14399c9be0b819536"}
+      ],
+      "evidence_status": "verified",
+      "confidence": "high",
+      "visibility": "public",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-011",
+      "locations": ["content/profile.json:experience[NGDC]", "generated/site-content.md:Experience", "resume-en.md:Research Experience"],
+      "text": "Graduate Researcher at NGDC/CNCB from 2023 through June 2026; the role ended with M.S. graduation.",
+      "transformation": "direct",
+      "sources": [
+        {"knowledge_id": "entity.NationalGenomicsDataCenter", "path": "wiki/entities/NationalGenomicsDataCenter.md", "sha256": "33b4764ab8d19259a8c835cea4915f45f4c81ee3eac7dbc02ef1f8a1c20f4686"},
+        {"knowledge_id": "source.current-status-update-2026-08", "path": "wiki/sources/current-status-update-2026-08.md", "sha256": "323fd0ef4f5c21304fea1c1a5636b70f9d08a01b61d2730a7ef0d6188550f5b2"}
+      ],
+      "evidence_status": "user-confirmed",
+      "confidence": "high",
+      "visibility": "public-professional",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-012",
+      "locations": ["content/profile.json:experience[NGDC]", "resume-en.md:Research Experience"],
+      "text": "Built conversational agents for natural-language access to genomic and epigenomic databases and architected EWAS Text-to-SQL/data-exploration workflows.",
+      "transformation": "paraphrase",
+      "sources": [
+        {"knowledge_id": "source.archived-cv-experience-facts", "path": "wiki/sources/archived-cv-experience-facts.md", "sha256": "8c3f598da6631d71c2e535172bd31d9d77edac4e85bb9fd25ea898f17cd710e2"},
+        {"knowledge_id": "entity.EWASAIAssistant", "path": "wiki/entities/EWASAIAssistant.md", "sha256": "4c81ab6e2838bc2d866db303a4a548179ef07d330f4a22718c7c5e483713cc31"}
+      ],
+      "evidence_status": "reviewed",
+      "confidence": "medium",
+      "visibility": "public-professional",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-013",
+      "locations": ["content/profile.json:experience[NGDC]", "resume-en.md:Research Experience"],
+      "text": "Contributed multi-omics pipeline and chatbot components to iDog.",
+      "transformation": "paraphrase",
+      "sources": [
+        {"knowledge_id": "source.archived-cv-experience-facts", "path": "wiki/sources/archived-cv-experience-facts.md", "sha256": "8c3f598da6631d71c2e535172bd31d9d77edac4e85bb9fd25ea898f17cd710e2"}
+      ],
+      "evidence_status": "reviewed",
+      "confidence": "medium",
+      "visibility": "public-professional",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-014",
+      "locations": ["content/profile.json:experience[NGDC]", "resume-en.md:Research Experience"],
+      "text": "Contributed to BioKA by curating and integrating biomarker data from more than 20 public resources.",
+      "transformation": "paraphrase",
+      "sources": [
+        {"knowledge_id": "source.archived-cv-experience-facts", "path": "wiki/sources/archived-cv-experience-facts.md", "sha256": "8c3f598da6631d71c2e535172bd31d9d77edac4e85bb9fd25ea898f17cd710e2"}
+      ],
+      "evidence_status": "reviewed",
+      "confidence": "medium",
+      "visibility": "public-professional",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-015",
+      "locations": ["content/profile.json:experience[Dingent]", "content/projects/dingent.md", "resume-en.md:Dingent"],
+      "text": "Demian Kong founded Dingent and led its architecture and development from 2024 through June 2026.",
+      "transformation": "direct",
+      "sources": [
+        {"knowledge_id": "source.public-profile-update-2026-09", "path": "wiki/sources/public-profile-update-2026-09.md", "sha256": "679beb6c173fca9d22a46b29a2cfbab48a22482c8b9fc4572fa41f81c2645fdf"},
+        {"knowledge_id": "entity.Dingent", "path": "wiki/entities/Dingent.md", "sha256": "aef18b83d6f0250db4128ddc973e518a919306486164d15dbbdddc128eaaf5e1"}
+      ],
+      "evidence_status": "user-confirmed",
+      "confidence": "high",
+      "visibility": "public-approved",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-016",
+      "locations": ["content/profile.json:experience[Dingent]", "content/projects/dingent.md", "resume-en.md:Dingent"],
+      "text": "Dingent uses MCP-based tools, graph-compiled workflows, checkpointed execution, and cross-database evidence integration.",
+      "transformation": "paraphrase",
+      "sources": [
+        {"knowledge_id": "entity.Dingent", "path": "wiki/entities/Dingent.md", "sha256": "aef18b83d6f0250db4128ddc973e518a919306486164d15dbbdddc128eaaf5e1"},
+        {"knowledge_id": "source.public-profile-update-2026-09", "path": "wiki/sources/public-profile-update-2026-09.md", "sha256": "679beb6c173fca9d22a46b29a2cfbab48a22482c8b9fc4572fa41f81c2645fdf"}
+      ],
+      "evidence_status": "user-confirmed",
+      "confidence": "high",
+      "visibility": "public-approved",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-017",
+      "locations": ["content/profile.json:experience[Dingent]", "content/projects/dingent.md", "resume-en.md:Dingent"],
+      "text": "Dingent was integrated across eight CNCB data resources during graduate work.",
+      "transformation": "direct",
+      "sources": [
+        {"knowledge_id": "source.public-profile-update-2026-09", "path": "wiki/sources/public-profile-update-2026-09.md", "sha256": "679beb6c173fca9d22a46b29a2cfbab48a22482c8b9fc4572fa41f81c2645fdf"}
+      ],
+      "evidence_status": "user-confirmed",
+      "confidence": "high",
+      "visibility": "public-approved",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-018",
+      "locations": ["content/profile.json:experience[Dingent]", "content/projects/dingent.md", "resume-en.md:Dingent"],
+      "text": "A Dingent load test used 100 concurrent users and measured approximately 400 ms median framework-side latency.",
+      "transformation": "direct",
+      "sources": [
+        {"knowledge_id": "source.public-profile-update-2026-09", "path": "wiki/sources/public-profile-update-2026-09.md", "sha256": "679beb6c173fca9d22a46b29a2cfbab48a22482c8b9fc4572fa41f81c2645fdf"},
+        {"knowledge_id": "source.ucas-ms-thesis", "path": "wiki/sources/ucas-ms-thesis.md", "sha256": "0baeb20a0e766536f9d67bbaa94827269856b1e7568b317393796176e73f7147"}
+      ],
+      "evidence_status": "user-confirmed",
+      "confidence": "high",
+      "visibility": "public-approved",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-019",
+      "locations": ["content/profile.json:experience[Dingent]", "content/projects/dingent.md", "resume-en.md:Dingent"],
+      "text": "Dingent was transferred to the group at graduation; subsequent involvement is technical support only and does not imply control of CNCB resources.",
+      "transformation": "paraphrase",
+      "sources": [
+        {"knowledge_id": "source.current-status-update-2026-08", "path": "wiki/sources/current-status-update-2026-08.md", "sha256": "323fd0ef4f5c21304fea1c1a5636b70f9d08a01b61d2730a7ef0d6188550f5b2"},
+        {"knowledge_id": "source.public-profile-update-2026-09", "path": "wiki/sources/public-profile-update-2026-09.md", "sha256": "679beb6c173fca9d22a46b29a2cfbab48a22482c8b9fc4572fa41f81c2645fdf"}
+      ],
+      "evidence_status": "user-confirmed",
+      "confidence": "high",
+      "visibility": "public-approved",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-020",
+      "locations": ["content/projects/dingent.md", "content/publications/dingent.md", "generated/site-content.md:Publications", "resume-en.md:Publications"],
+      "text": "Kong D, Bei S, Wu Y, Tang B, Zhao W authored the 2026 bioRxiv preprint ‘Dingent: An Easily Deployable Database Retrieval and Integration Agent framework,’ DOI 10.64898/2026.03.17.712026; Kong D is first listed.",
+      "transformation": "direct",
+      "sources": [
+        {"knowledge_id": "source.public-profile-update-2026-09", "path": "wiki/sources/public-profile-update-2026-09.md", "sha256": "679beb6c173fca9d22a46b29a2cfbab48a22482c8b9fc4572fa41f81c2645fdf"}
+      ],
+      "evidence_status": "verified",
+      "confidence": "high",
+      "visibility": "public",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-021",
+      "locations": ["content/profile.json:experience[EWAS]", "content/projects/ewas-ai-assistant.md", "resume-en.md:EWAS AI Assistant"],
+      "text": "Developed EWAS AI Assistant during 2024–June 2026; personal involvement ended at M.S. graduation.",
+      "transformation": "direct",
+      "sources": [
+        {"knowledge_id": "entity.EWASAIAssistant", "path": "wiki/entities/EWASAIAssistant.md", "sha256": "4c81ab6e2838bc2d866db303a4a548179ef07d330f4a22718c7c5e483713cc31"},
+        {"knowledge_id": "source.current-status-update-2026-08", "path": "wiki/sources/current-status-update-2026-08.md", "sha256": "323fd0ef4f5c21304fea1c1a5636b70f9d08a01b61d2730a7ef0d6188550f5b2"}
+      ],
+      "evidence_status": "user-confirmed",
+      "confidence": "high",
+      "visibility": "public-professional",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-022",
+      "locations": ["content/profile.json:experience[EWAS]", "content/projects/ewas-ai-assistant.md", "resume-en.md:EWAS AI Assistant"],
+      "text": "EWAS AI Assistant connects biomedical entity retrieval, schema-constrained Text-to-SQL, execution-based verification and correction, synthesis, and visualization.",
+      "transformation": "paraphrase",
+      "sources": [
+        {"knowledge_id": "entity.EWASAIAssistant", "path": "wiki/entities/EWASAIAssistant.md", "sha256": "4c81ab6e2838bc2d866db303a4a548179ef07d330f4a22718c7c5e483713cc31"},
+        {"knowledge_id": "source.ucas-ms-thesis", "path": "wiki/sources/ucas-ms-thesis.md", "sha256": "0baeb20a0e766536f9d67bbaa94827269856b1e7568b317393796176e73f7147"}
+      ],
+      "evidence_status": "reviewed",
+      "confidence": "high",
+      "visibility": "public-approved",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-023",
+      "locations": ["content/profile.json:experience[EWAS]", "content/projects/ewas-ai-assistant.md", "resume-en.md:EWAS AI Assistant"],
+      "text": "The EWAS evaluation used 30 expert-reviewed questions with manually verified reference SQL; 23 were fully correct and 25 were fully or partially correct.",
+      "transformation": "direct",
+      "sources": [
+        {"knowledge_id": "source.public-profile-update-2026-09", "path": "wiki/sources/public-profile-update-2026-09.md", "sha256": "679beb6c173fca9d22a46b29a2cfbab48a22482c8b9fc4572fa41f81c2645fdf"}
+      ],
+      "evidence_status": "user-confirmed",
+      "confidence": "high",
+      "visibility": "public-approved",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-024",
+      "locations": ["content/profile.json:experience[EWAS]", "content/projects/ewas-ai-assistant.md", "resume-en.md:EWAS AI Assistant"],
+      "text": "The EWAS evaluation achieved 76.7% strict accuracy and 83.3% fully-or-partially-correct accuracy.",
+      "transformation": "calculation",
+      "sources": [
+        {"knowledge_id": "source.public-profile-update-2026-09", "path": "wiki/sources/public-profile-update-2026-09.md", "sha256": "679beb6c173fca9d22a46b29a2cfbab48a22482c8b9fc4572fa41f81c2645fdf"}
+      ],
+      "calculation": {
+        "strict": {"formula": "23 / 30 * 100", "result": 76.6666666667, "rendered": "76.7%"},
+        "relaxed": {"formula": "25 / 30 * 100", "result": 83.3333333333, "rendered": "83.3%"}
+      },
+      "evidence_status": "user-confirmed",
+      "confidence": "high",
+      "visibility": "public-approved",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-025",
+      "locations": ["content/profile.json:research.publicationsNote", "content/projects/ewas-ai-assistant.md", "generated/site-content.md:Experience", "resume-en.md:Selected Projects note"],
+      "text": "The EWAS and Dingent evaluation figures are project/thesis evidence, not journal-reported metrics.",
+      "transformation": "direct",
+      "sources": [
+        {"knowledge_id": "source.public-profile-update-2026-09", "path": "wiki/sources/public-profile-update-2026-09.md", "sha256": "679beb6c173fca9d22a46b29a2cfbab48a22482c8b9fc4572fa41f81c2645fdf"},
+        {"knowledge_id": "concept.ProfileFactGovernance", "path": "wiki/concepts/ProfileFactGovernance.md", "sha256": "3fc50d6dcf77dd1f27f105838ba97929eafdb38611c4b1332e011d86e378435c"}
+      ],
+      "evidence_status": "verified-qualification",
+      "confidence": "high",
+      "visibility": "public",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-026",
+      "locations": ["content/publications/ewas-open-platform.md", "generated/site-content.md:Publications", "resume-en.md:Publications"],
+      "text": "EWAS Open Platform 2026, Nucleic Acids Research 54(D1):D1061–D1068, DOI 10.1093/nar/gkaf1155; Kong D is a joint first author/equal contributor.",
+      "transformation": "direct",
+      "sources": [
+        {"knowledge_id": "source.ewas-open-platform-pubmed-41243956", "path": "wiki/sources/ewas-open-platform-pubmed-41243956.md", "sha256": "106c9ab38fbf18b0582685ae830c95ea3ffeb6d220ac953bcf0e8e826e7b9d64"},
+        {"knowledge_id": "concept.ProfileFactGovernance", "path": "wiki/concepts/ProfileFactGovernance.md", "sha256": "3fc50d6dcf77dd1f27f105838ba97929eafdb38611c4b1332e011d86e378435c"}
+      ],
+      "evidence_status": "verified",
+      "confidence": "high",
+      "visibility": "public",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-027",
+      "locations": ["content/publications/idog.md", "content/profile.json:research.publicationsNote", "generated/site-content.md:Publications", "resume-en.md:Publications"],
+      "text": "iDog, Nucleic Acids Research 2025;53(D1):D1039–D1046, DOI 10.1093/nar/gkae1031; the official correction expands joint-first authorship to the first five authors, including Kong D.",
+      "transformation": "direct",
+      "sources": [
+        {"knowledge_id": "source.publication-evidence-update-2026-09", "path": "wiki/sources/publication-evidence-update-2026-09.md", "sha256": "376ab3bab5dc5652167f41f70e6a1943ce799138ef847baf1000721dfdc3d7e2"}
+      ],
+      "evidence_status": "official",
+      "confidence": "high",
+      "visibility": "public",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-028",
+      "locations": ["content/publications/bioka.md", "generated/site-content.md:Publications", "resume-en.md:Publications"],
+      "text": "Wang Y, Kong D, et al. BioKA: a curated and integrated biomarker knowledgebase for animals. Nucleic Acids Research. 2024;52(D1).",
+      "transformation": "direct",
+      "sources": [
+        {"knowledge_id": "source.master-profile", "path": "wiki/sources/master-profile.md", "sha256": "d522fffc2b5d72a3894370bacc8ccff1a4ef3ee1c061c0f37f22ef886e3d5549"}
+      ],
+      "evidence_status": "reviewed",
+      "confidence": "medium",
+      "visibility": "public",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-029",
+      "locations": ["content/publications/ngdc-2024.md", "content/publications/ngdc-2025.md", "generated/site-content.md:Publications"],
+      "text": "Kong D is included in the recorded NGDC database-resources publications for 2024 and 2025, with the displayed volumes and pages.",
+      "transformation": "aggregation",
+      "sources": [
+        {"knowledge_id": "source.master-profile", "path": "wiki/sources/master-profile.md", "sha256": "d522fffc2b5d72a3894370bacc8ccff1a4ef3ee1c061c0f37f22ef886e3d5549"},
+        {"knowledge_id": "source.archived-cv-experience-facts", "path": "wiki/sources/archived-cv-experience-facts.md", "sha256": "8c3f598da6631d71c2e535172bd31d9d77edac4e85bb9fd25ea898f17cd710e2"}
+      ],
+      "evidence_status": "reviewed",
+      "confidence": "medium",
+      "visibility": "public",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-030",
+      "locations": ["content/publications/ngdc-2026.md", "generated/site-content.md:Publications", "resume-en.md:Publications"],
+      "text": "The 2026 NGDC database-resources article is Nucleic Acids Research 54(D1):D28–D47, DOI 10.1093/nar/gkaf1172, PMID 41359036; Kong D is listed among official consortium contributors.",
+      "transformation": "direct",
+      "sources": [
+        {"knowledge_id": "source.publication-evidence-update-2026-09", "path": "wiki/sources/publication-evidence-update-2026-09.md", "sha256": "376ab3bab5dc5652167f41f70e6a1943ce799138ef847baf1000721dfdc3d7e2"},
+        {"knowledge_id": "entity.NationalGenomicsDataCenter", "path": "wiki/entities/NationalGenomicsDataCenter.md", "sha256": "33b4764ab8d19259a8c835cea4915f45f4c81ee3eac7dbc02ef1f8a1c20f4686"}
+      ],
+      "evidence_status": "official",
+      "confidence": "high",
+      "visibility": "public",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-031",
+      "locations": ["content/profile.json:home.highlights", "generated/site-content.md:Positioning"],
+      "text": "Demian Kong is first author of the Dingent preprint and joint first author of the EWAS Open Platform and iDog Nucleic Acids Research papers.",
+      "transformation": "synthesis",
+      "method": "Aggregated three separately verified publication/authorship records.",
+      "sources": [
+        {"knowledge_id": "source.public-profile-update-2026-09", "path": "wiki/sources/public-profile-update-2026-09.md", "sha256": "679beb6c173fca9d22a46b29a2cfbab48a22482c8b9fc4572fa41f81c2645fdf"},
+        {"knowledge_id": "source.ewas-open-platform-pubmed-41243956", "path": "wiki/sources/ewas-open-platform-pubmed-41243956.md", "sha256": "106c9ab38fbf18b0582685ae830c95ea3ffeb6d220ac953bcf0e8e826e7b9d64"},
+        {"knowledge_id": "source.publication-evidence-update-2026-09", "path": "wiki/sources/publication-evidence-update-2026-09.md", "sha256": "376ab3bab5dc5652167f41f70e6a1943ce799138ef847baf1000721dfdc3d7e2"}
+      ],
+      "evidence_status": "verified",
+      "confidence": "high",
+      "visibility": "public",
+      "approved_for_output": true
+    },
+    {
+      "id": "claim-032",
+      "locations": ["content/profile.json:about.toolkit", "resume-en.md:Technical Skills & Recognition"],
+      "text": "Selected toolkit includes the displayed programming, data, agent-framework, application, and systems technologies.",
+      "transformation": "aggregation",
+      "sources": [
+        {"knowledge_id": "source.master-profile", "path": "wiki/sources/master-profile.md", "sha256": "d522fffc2b5d72a3894370bacc8ccff1a4ef3ee1c061c0f37f22ef886e3d5549"},
+        {"knowledge_id": "source.archived-cv-experience-facts", "path": "wiki/sources/archived-cv-experience-facts.md", "sha256": "8c3f598da6631d71c2e535172bd31d9d77edac4e85bb9fd25ea898f17cd710e2"},
+        {"knowledge_id": "entity.Chrona", "path": "wiki/entities/Chrona.md", "sha256": "37c7c6fb91344a07cd85aca65ce880c83889a346d92419a14399c9be0b819536"}
+      ],
+      "evidence_status": "reviewed",
+      "confidence": "medium",
+      "visibility": "public-professional",
+      "approved_for_output": true
+    }
+  ]
+}

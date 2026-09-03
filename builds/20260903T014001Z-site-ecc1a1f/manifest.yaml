@@ -1,0 +1,99 @@
+version: 1
+build:
+  id: 20260903T014001Z-site-ecc1a1f
+  status: needs-review
+  started_at: 2026-09-03T01:40:01Z
+  completed_at: 2026-09-03T01:50:23Z
+  prior_build: 20260819T145238Z-site-88cfa65
+
+artifact:
+  name: demian-personal-website
+  type: website-with-public-resume
+  current_draft: generated/site-content.md
+  run_snapshot: builds/20260903T014001Z-site-ecc1a1f/artifact.md
+  run_snapshot_sha256: 8b36a84634366b39decbbe86eab9511a0484e220db8f84515405240a646386fc
+  additional_outputs:
+    - current: generated/public-resume-en.md
+      snapshot: builds/20260903T014001Z-site-ecc1a1f/resume-en.md
+      sha256: c41f52c4916e6b69da5da818d15126a62875ce67948958e66e4d67166109d02d
+    - current: generated/public-resume-en.typ
+      snapshot: builds/20260903T014001Z-site-ecc1a1f/resume-en.typ
+      sha256: f05dd01c2b70f20d295043e74e56b52ad0d8adee9f3e93d165b17f16c3ba57e9
+    - current: generated/public-resume-en.pdf
+      snapshot: builds/20260903T014001Z-site-ecc1a1f/resume-en.pdf
+      sha256: 5150dc40a3c8e8128a8e0dad05f2224d755709f9fec057c95b6454f332db4638
+      pages: 1
+
+knowledge_source:
+  lock: builds/20260903T014001Z-site-ecc1a1f/source.lock.yaml
+  lock_sha256: 025c8e14400e42d02e3bcb06a0abc683da145bcf4a1577169bc26fb01e194efa
+  revision: 88cfa6560b91dc2dc51539febeb32df64fa046e1
+  revision_mode: snapshot-hash
+  snapshot_sha256: ecc1a1f032d2840252eaee0d495a410b4a5cbc5c54c67448b0bbcf5c0fef9ed6
+
+builder:
+  skill: knowledge-artifact-builder
+  skill_version: 1
+  skill_file_sha256: 9bf262fabc17566027b620ba01bdfd663084cc439620de9d55e789c1815eda9c
+  model: openai-codex/unknown
+
+configuration:
+  artifact_spec:
+    path: artifact.yaml
+    sha256: d10e91a22a9b12ab2edd0447f0dd7ecf636ead0b4126faec8328bfe61ddcc601
+  editorial_spec:
+    path: spec/website.md
+    sha256: a1f18fe2a2dddde28018885de62edd6cf9114b890ca16b4cfca6f3db56f3939b
+  resolved_inputs:
+    path: builds/20260903T014001Z-site-ecc1a1f/resolved-inputs.yaml
+    sha256: 6de648be39fa3f0e1afa298126ea18011a9b15cbe2b0ebd972f676a6351691e7
+  evidence_plan:
+    path: builds/20260903T014001Z-site-ecc1a1f/evidence-plan.yaml
+    sha256: a117219e01b905452666a7cbe96d152e28eb39a7423075b691257ee504581875
+  method:
+    path: builds/20260903T014001Z-site-ecc1a1f/method.md
+    sha256: 8eafd5a620fd7de922c5fb1ab6446f0d2d791a9c3929b700d4f2c7b1d7a17ae5
+  template:
+    path: templates/public-resume-layout.typ
+    sha256: cf9319d95d89cdfe8d594701d42d5a925ba23ed5f986d9ce2376a714d2f1021c
+  validation_policy:
+    identity: knowledge-artifact-builder-validation@1
+    sha256: 2766397941296317d93f4536f24b7d22abf8c6fd8a52adbb26cdcc09db906fc1
+  build_inputs:
+    - path: AGENTS.md
+      sha256: 8483c1383b0545555123c957108110dc3513aadb3d96bfbd3752a153f5e70726
+    - path: README.md
+      sha256: f726a527da75c49c8418f0c8338b51a06b983ca412db4f751b2513e13996433e
+    - path: spec/website.md
+      sha256: a1f18fe2a2dddde28018885de62edd6cf9114b890ca16b4cfca6f3db56f3939b
+
+provenance:
+  claim_map: builds/20260903T014001Z-site-ecc1a1f/claim-map.json
+  claim_map_sha256: 91edc287d251cdaf4778ce4ce1ced5a5c74e9c7d63edc8e3ae3a9cffe9738dc3
+  total_material_claims: 32
+  mapped_claims: 32
+  unsupported_claims: 0
+
+validation:
+  report: builds/20260903T014001Z-site-ecc1a1f/validation.md
+  report_sha256: d6246a3273f280202e10c099e2eae052d3ea933d8eeb5c36f9f4969eb4da5f8e
+  status: passed-with-warnings
+  required_checks_not_run: 0
+  private_content_findings: 0
+  conflicts: 0
+
+review:
+  run_record: builds/20260903T014001Z-site-ecc1a1f/review.yaml
+  run_record_sha256: d38e068b7d49fa82997386920144c6cd1aff40c5a23a0b12a50a3ce34a904c54
+  status: pending
+  latest_event: null
+
+publication:
+  status: not-published
+  website_deployed: false
+  resume_replaced: false
+  latest_event: null
+
+change_record:
+  output_diff: builds/20260903T014001Z-site-ecc1a1f/output.diff
+  output_diff_sha256: 091e9839e20418e475db9e6cc26870772730d67e613b551a8aae6e01f45e6e5e

@@ -1,6 +1,6 @@
 # Demian Kong — Public Website Content Build
 
-Build target: current Astro website
+Build target: current Astro website and one-page English public resume
 Audience: research collaborators, Ph.D. admissions readers, and AI engineering collaborators
 
 ## Positioning
@@ -9,42 +9,48 @@ Demian Kong is an AI engineer and bioinformatics M.S. graduate working at the in
 
 ## Current status
 
-The M.S. in Bioinformatics at the University of Chinese Academy of Sciences was completed in June 2026. There is currently no formal employer. Chrona is the current application under active development, and Ph.D. applications are being prepared.
+The M.S. in Bioinformatics at the University of Chinese Academy of Sciences was completed in June 2026. There is currently no formal employer. Chrona is the current application under active development; v0.3.1 is its current public alpha release. Ph.D. applications are being prepared.
 
-## Education
+## Education and credentials
 
 - University of Chinese Academy of Sciences: M.S. in Bioinformatics, 2023–2026, graduated June 2026. Official transcripts record 16 completed courses and 30.0 total credits; the Chinese transcript identifies 23.0 degree-course credits. Neither transcript reports GPA or rank.
 - Jilin University: B.S. in Pharmacy, 2019–2023. Undergraduate research covered hepatic-fibrosis biology, MKP5 studies, chemical synthesis, and single-crystal X-ray crystallography.
-
-## Toolkit and recognition
-
-- Selected toolkit evidenced across the profile and projects: Python, TypeScript/JavaScript, SQL, Bash, Linux, LangChain/LangGraph, FastAPI, React, Next.js, Vue, MCP integration, PyTorch, Pandas, NumPy, Docker, and Git.
+- English: IELTS overall 7.0.
 - Provincial-level Innovation and Entrepreneurship Training Program honor at Jilin University.
 
 ## Experience
 
-- Chrona: current application development. A local-first AI work executor organized around Task → Plan → Schedule → Execute → Review/Recover, with explicit approval boundaries, observable state, recovery, and preserved evidence. The repository identifies version 0.2.0, MIT licensing, and alpha/local-development status.
+- Chrona: current application development. A local-first AI work executor organized around Task → Plan → Schedule → Execute → Review/Recover, with explicit approval boundaries, observable state, recovery, and preserved evidence. Version 0.3.1 is the current public alpha release; it is not presented as stable production software.
 - National Genomics Data Center (NGDC), CNCB: Graduate Researcher, 2023–June 2026. Built conversational agents for genomic and epigenomic databases; contributed to iDog and BioKA; architected the EWAS AI Assistant.
-- Dingent: historical lead architect and maintainer, 2024–June 2026; transferred to the group at graduation, with technical support thereafter.
-- EWAS AI Assistant: historical developer, 2024–June 2026. Built a natural-language data-access workflow connecting intent parsing, SQL generation, retrieval, synthesis, and interactive visualizations.
+- Dingent: founder and lead architect/developer, 2024–June 2026. Built a configurable framework for stateful agents over heterogeneous scientific databases with MCP-based tools, graph-compiled workflows, checkpointed execution, and cross-database evidence integration. During graduate work, the framework was integrated across eight CNCB data resources and evaluated under a 100-concurrent-user workload with approximately 400 ms median framework-side latency. The project was transferred to the group at graduation; the current relationship is technical support only.
+- EWAS AI Assistant: historical developer, 2024–June 2026. Built a natural-language data-access workflow connecting biomedical entity retrieval, schema-constrained Text-to-SQL, execution-based verification and correction, synthesis, and interactive visualization. On 30 expert-reviewed questions with manually verified reference SQL, 23 responses were fully correct and 25 were fully or partially correct, corresponding to 76.7% strict accuracy and 83.3% fully-or-partially-correct accuracy.
 - Jilin University: thesis student, 2022–2023, and undergraduate researcher, 2021–2022, covering hepatic-fibrosis/MKP5 research and pyranochromene synthesis/crystallography.
+
+The Dingent and EWAS figures above are user-confirmed project/thesis evaluation evidence, not journal-reported metrics.
 
 ## Projects
 
-- Chrona — <https://github.com/saya-ashen/Chrona>
-- Dingent — <https://github.com/saya-ashen/Dingent>
+- Chrona — <https://github.com/saya-ashen/Chrona> — v0.3.1 release: <https://github.com/saya-ashen/Chrona/releases/tag/v0.3.1>
+- Dingent — <https://github.com/saya-ashen/Dingent> — preprint: <https://doi.org/10.64898/2026.03.17.712026>
 - EWAS AI Assistant — <https://ngdc.cncb.ac.cn/bioagent/#/>
 
-## Publications
+## Selected publications
 
-1. Yang F, Xiong Z, Zong W, Kong D, et al. EWAS Open Platform 2026: a deeply integrated resource for epigenome-wide association studies. Nucleic Acids Research. 2026;54(D1):D1061–D1068. DOI: 10.1093/nar/gkaf1155; PMID: 41243956.
-2. Wang Y, Kong D, et al. BioKA: a curated and integrated biomarker knowledgebase for animals. Nucleic Acids Research. 2024;52(D1).
-3. Bai X, … Kong D, … Tian W. Database resources of NGDC in 2024. Nucleic Acids Research. 2024;52(D1):D18–D32.
-4. Liu Y, Wang Y, Sun J, Kong D, et al. iDog: a multi-omics resource for canids study. Nucleic Acids Research. 2025;53(D1):D1039–D1046.
-5. Bao Y, Kong D, et al. Database Resources of NGDC in 2025. Nucleic Acids Research. 2025;53(D1):D30–D44.
+1. Kong D, Bei S, Wu Y, Tang B, Zhao W. Dingent: An Easily Deployable Database Retrieval and Integration Agent framework. bioRxiv preprint. 2026. DOI: 10.64898/2026.03.17.712026.
+2. Yang F†, Xiong Z†, Zong W†, Kong D†, et al. EWAS Open Platform 2026: a deeply integrated resource for epigenome-wide association studies. Nucleic Acids Research. 2026;54(D1):D1061–D1068. DOI: 10.1093/nar/gkaf1155; PMID: 41243956.
+3. Liu Y†, Wang Y†, Sun J†, Kong D†, Zhou B†, et al. iDog: a multi-omics resource for canids study. Nucleic Acids Research. 2025;53(D1):D1039–D1046. The official correction expands joint-first authorship to the first five authors.
+4. Wang Y, Kong D, et al. BioKA: a curated and integrated biomarker knowledgebase for animals. Nucleic Acids Research. 2024;52(D1).
+5. CNCB–NGDC Members and Partners. Database resources of the National Genomics Data Center, China National Center for Bioinformation in 2026. Nucleic Acids Research. 2026;54(D1):D28–D47. DOI: 10.1093/nar/gkaf1172; PMID: 41359036. Kong D is listed among the official consortium contributors.
+6. Bao Y, Kong D, et al. Database Resources of NGDC in 2025. Nucleic Acids Research. 2025;53(D1):D30–D44.
+7. Bai X, … Kong D, … Tian W. Database resources of NGDC in 2024. Nucleic Acids Research. 2024;52(D1):D18–D32.
+
+† Equal contribution / joint first author.
 
 ## Public contact
 
-GitHub: <https://github.com/saya-ashen>
+- Email: <c3313433633@gmail.com>
+- GitHub: <https://github.com/saya-ashen>
 
-Private application contact details, referee records, address, phone, date of birth, citizenship, and other non-public fields are intentionally excluded.
+## Public-release exclusions
+
+GPA, school email, phone, address, date of birth, citizenship, student ID, referee records, mobility declarations, and all other private application fields are intentionally excluded. Dingent wording does not imply post-handover control of the project or CNCB resources.

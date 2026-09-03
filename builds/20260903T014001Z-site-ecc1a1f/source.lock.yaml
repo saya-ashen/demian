@@ -1,0 +1,185 @@
+version: 1
+knowledge_source:
+  name: llm-wiki-agent
+  path: /home/saya/workspace/llm-wiki-agent
+  repository: https://github.com/saya-ashen/llm-wiki-agent.git
+  branch: main
+  revision: 88cfa6560b91dc2dc51539febeb32df64fa046e1
+  base_revision: 88cfa6560b91dc2dc51539febeb32df64fa046e1
+  release: null
+  revision_mode: snapshot-hash
+  schema_version: llm-wiki-agent/markdown-v1
+  snapshot:
+    algorithm: sha256
+    scope: selected-inputs-and-indexes
+    sha256: ecc1a1f032d2840252eaee0d495a410b4a5cbc5c54c67448b0bbcf5c0fef9ed6
+  working_tree:
+    clean: false
+    status_sha256: 86dbe0cbe1ed53702447acaa41cf98d60bd99b85d2946710bd165bb3ad57130e
+    diff_sha256: 2ee545e7a6970f9e9904bb1f1e412c220b8524a67128e73135328374b1ee689b
+    dirty_paths:
+      - .pi/hindsight/retain-cursors.json
+      - .pi/hindsight/retain-queue.jsonl
+      - .pi/hindsight/retain-receipts.json
+      - graph/graph.html
+      - graph/graph.json
+      - raw/personal-kb/ewas-open-platform-pubmed-41243956.md
+      - wiki/concepts/AgenticBioinformatics.md
+      - wiki/concepts/ApplicationReadiness.md
+      - wiki/concepts/AppliedAICareerDirection.md
+      - wiki/concepts/CoreProfile.md
+      - wiki/concepts/ProfileFactGovernance.md
+      - wiki/concepts/ResearchTrajectory.md
+      - wiki/entities/Chrona.md
+      - wiki/entities/DemianKong.md
+      - wiki/entities/Dingent.md
+      - wiki/entities/EWASAIAssistant.md
+      - wiki/entities/NationalGenomicsDataCenter.md
+      - wiki/index.md
+      - wiki/log.md
+      - wiki/overview.md
+      - wiki/sources/ewas-open-platform-pubmed-41243956.md
+    untracked_paths:
+      - raw/personal-kb/public-profile-update-2026-09.md
+      - raw/personal-kb/publication-evidence-update-2026-09.md
+      - wiki/sources/public-profile-update-2026-09.md
+      - wiki/sources/publication-evidence-update-2026-09.md
+resolved_at: 2026-09-03T01:40:01Z
+inputs:
+  - id: source.public-profile-update-2026-09.raw
+    path: raw/personal-kb/public-profile-update-2026-09.md
+    sha256: 2e4835d2a5eb755e2912cbf296646c04bfb1ed6ae214365d7457a6cc695cdecf
+    status: user-confirmed
+    visibility: public-approved
+  - id: source.public-profile-update-2026-09
+    path: wiki/sources/public-profile-update-2026-09.md
+    sha256: 679beb6c173fca9d22a46b29a2cfbab48a22482c8b9fc4572fa41f81c2645fdf
+    status: user-confirmed
+    visibility: public-approved
+  - id: source.publication-evidence-update-2026-09.raw
+    path: raw/personal-kb/publication-evidence-update-2026-09.md
+    sha256: fb43bbeecf0a41d0ccd4836b41f703cfa24102eb5bd2e69c477660348d73a2c3
+    status: official
+    visibility: public
+  - id: source.publication-evidence-update-2026-09
+    path: wiki/sources/publication-evidence-update-2026-09.md
+    sha256: 376ab3bab5dc5652167f41f70e6a1943ce799138ef847baf1000721dfdc3d7e2
+    status: official
+    visibility: public
+  - id: entity.DemianKong
+    path: wiki/entities/DemianKong.md
+    sha256: b5c07026707892be0a2dc83163ba5dca862b53ca982314f51b28872110b33b12
+    status: reviewed
+    visibility: public-professional
+  - id: entity.Chrona
+    path: wiki/entities/Chrona.md
+    sha256: 37c7c6fb91344a07cd85aca65ce880c83889a346d92419a14399c9be0b819536
+    status: reviewed
+    visibility: public-professional
+  - id: entity.Dingent
+    path: wiki/entities/Dingent.md
+    sha256: aef18b83d6f0250db4128ddc973e518a919306486164d15dbbdddc128eaaf5e1
+    status: reviewed
+    visibility: public-professional
+  - id: entity.EWASAIAssistant
+    path: wiki/entities/EWASAIAssistant.md
+    sha256: 4c81ab6e2838bc2d866db303a4a548179ef07d330f4a22718c7c5e483713cc31
+    status: reviewed
+    visibility: public-professional
+  - id: entity.NationalGenomicsDataCenter
+    path: wiki/entities/NationalGenomicsDataCenter.md
+    sha256: 33b4764ab8d19259a8c835cea4915f45f4c81ee3eac7dbc02ef1f8a1c20f4686
+    status: reviewed
+    visibility: public-professional
+  - id: entity.UniversityOfChineseAcademyOfSciences
+    path: wiki/entities/UniversityOfChineseAcademyOfSciences.md
+    sha256: 5cbc9fa971507ebe639eeae2178336fff20b0bb1b1d98faefde9644f14658d7d
+    status: reviewed
+    visibility: public-professional
+  - id: entity.JilinUniversity
+    path: wiki/entities/JilinUniversity.md
+    sha256: 3630f1be38956c18c444b800c055baca5000af4a7dbdc28d95c531b736485b5c
+    status: reviewed
+    visibility: public-professional
+  - id: concept.CoreProfile
+    path: wiki/concepts/CoreProfile.md
+    sha256: ba80a2eed55c5d54f2451aff32e378b7f716cf9b5bb47f9731b68dfdb72808cb
+    status: reviewed
+    visibility: public-professional
+  - id: concept.AgenticBioinformatics
+    path: wiki/concepts/AgenticBioinformatics.md
+    sha256: da8470a6adb0cd8cee0d174a83a29f31693b0268ba7afe11d93b704786e6a8f0
+    status: reviewed
+    visibility: public-professional
+  - id: concept.AppliedAICareerDirection
+    path: wiki/concepts/AppliedAICareerDirection.md
+    sha256: 20a970bfff3e1e8f297cadacdbeebbeb7e1134f32d85514b05e657e8fd478889
+    status: reviewed
+    visibility: public-professional
+  - id: concept.ResearchTrajectory
+    path: wiki/concepts/ResearchTrajectory.md
+    sha256: 22959be99fb6d2f734cd048489896b65d657f45275abd6c9dd9db39167c1c9c7
+    status: reviewed
+    visibility: public-professional
+  - id: concept.ProfileFactGovernance
+    path: wiki/concepts/ProfileFactGovernance.md
+    sha256: 3fc50d6dcf77dd1f27f105838ba97929eafdb38611c4b1332e011d86e378435c
+    status: reviewed
+    visibility: public-professional
+  - id: concept.ApplicationReadiness
+    path: wiki/concepts/ApplicationReadiness.md
+    sha256: 29a26ad0f27f38040b53568f344416953140d247ecaba7b796266c4587755589
+    status: reviewed
+    visibility: mixed-private-governance-only
+  - id: source.master-profile
+    path: wiki/sources/master-profile.md
+    sha256: d522fffc2b5d72a3894370bacc8ccff1a4ef3ee1c061c0f37f22ef886e3d5549
+    status: reviewed
+    visibility: public-professional
+  - id: source.ucas-ms-thesis
+    path: wiki/sources/ucas-ms-thesis.md
+    sha256: 0baeb20a0e766536f9d67bbaa94827269856b1e7568b317393796176e73f7147
+    status: reviewed
+    visibility: public-approved-metrics-only
+  - id: source.ewas-open-platform-pubmed-41243956
+    path: wiki/sources/ewas-open-platform-pubmed-41243956.md
+    sha256: 106c9ab38fbf18b0582685ae830c95ea3ffeb6d220ac953bcf0e8e826e7b9d64
+    status: verified
+    visibility: public
+  - id: source.ewas-open-platform-pubmed-41243956.raw
+    path: raw/personal-kb/ewas-open-platform-pubmed-41243956.md
+    sha256: c1dab8a0b3ad6bc783e8b232ceadb2f5fa9dc643314b008e14ce10f577ba3057
+    status: verified
+    visibility: public
+  - id: source.current-status-update-2026-08
+    path: wiki/sources/current-status-update-2026-08.md
+    sha256: 323fd0ef4f5c21304fea1c1a5636b70f9d08a01b61d2730a7ef0d6188550f5b2
+    status: user-confirmed
+    visibility: public-professional
+  - id: source.education-status-update-2026-06
+    path: wiki/sources/education-status-update-2026-06.md
+    sha256: bb05806debab8c87b15c27649b5bebfd6432be0ab6e129f239f244295c076e53
+    status: user-confirmed
+    visibility: public-professional
+  - id: source.archived-cv-experience-facts
+    path: wiki/sources/archived-cv-experience-facts.md
+    sha256: 8c3f598da6631d71c2e535172bd31d9d77edac4e85bb9fd25ea898f17cd710e2
+    status: reviewed
+    visibility: public-professional-with-stale-markers
+  - id: source.ucas-ms-transcript-zh
+    path: wiki/sources/ucas-ms-transcript-zh.md
+    sha256: b9104f6d7a9e8f3f7832adeee72f20ef0b7db475648db5db1252a978c2ab64bb
+    status: official
+    visibility: restricted-source-public-summary-only
+  - id: source.ucas-ms-transcript-en
+    path: wiki/sources/ucas-ms-transcript-en.md
+    sha256: 4b5dc2932e8f8d66a34a4681f922f6d3c5d5c0ad9aa4c9ec565e337fe83b6131
+    status: official
+    visibility: restricted-source-public-summary-only
+indexes:
+  - path: wiki/index.md
+    sha256: 70de61d705d98204b815db8ca3444b5dfbace5dc57a3774fb21ff06bcca9a06f
+  - path: wiki/overview.md
+    sha256: 8c10af81696e0dfe1115ad5623982fc986a6486988174847b137b980ee2680f0
+  - path: wiki/log.md
+    sha256: 4d313691bd03a9719c32e91bc5a6fc9f6e2cdb46f03c4a4a61465838568f04e4

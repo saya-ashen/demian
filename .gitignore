@@ -13,8 +13,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# local agent state
+# local agent state and temporary build scratch
 .pi/
+.tmp/
 
 # environment variables
 .env

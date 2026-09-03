@@ -1,0 +1,12 @@
+version: 1
+build_id: 20260903T014001Z-site-ecc1a1f
+status: pending
+reviewer: null
+reviewed_at: null
+checks:
+  facts: pending
+  privacy: pending
+  presentation: pending
+notes:
+  - The profile owner approved the underlying IELTS and project facts for public use before this build.
+  - Approval of the exact generated wording, layout, and PDF still requires an append-only review event.

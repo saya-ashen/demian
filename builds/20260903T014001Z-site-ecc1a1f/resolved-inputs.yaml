@@ -1,0 +1,100 @@
+version: 1
+artifact_requirements:
+  name: demian-personal-website
+  purpose: Public personal research and engineering website and matching public resume.
+  audience:
+    - research collaborators
+    - Ph.D. admissions readers
+    - AI engineering collaborators
+  language: en
+  output_paths:
+    - generated/site-content.md
+    - generated/public-resume-en.md
+    - generated/public-resume-en.typ
+    - generated/public-resume-en.pdf
+  required_sections:
+    - home
+    - about
+    - education
+    - current direction
+    - experience timeline
+    - projects
+    - publications
+    - contact
+    - one-page public resume
+  resume_max_pages: 1
+
+selectors:
+  include:
+    - reviewed public professional facts from the declared Wiki snapshot
+    - exact contact and IELTS facts approved for public release on 2026-09-03
+    - Chrona v0.3.1 public alpha release
+    - user-approved EWAS and Dingent project evaluation claims
+    - official Dingent preprint, iDog correction, EWAS paper, and NGDC 2026 records
+  exclude:
+    - stale or superseded current-status wording
+    - GPA and rank
+    - unapproved application, identity, referee, and mobility data
+    - any unpublished metric not explicitly approved in source.public-profile-update-2026-09
+
+policy:
+  privacy: exact-public-approval-only
+  publication_requires_human_review: true
+  knowledge_source_read_only_during_artifact_build: true
+  fail_on_unsupported_claims: true
+  fail_on_private_content: true
+  fail_on_source_mutation: true
+  project_metric_qualification: project/thesis evidence, not journal-reported metrics
+  dingent_handover_qualification: no implication of post-June-2026 project or CNCB-resource control
+
+validation:
+  required_checks:
+    - source-containment
+    - source-lock-hashes
+    - source-unchanged
+    - claim-provenance
+    - numeric-and-date-consistency
+    - privacy
+    - stale-wording
+    - astro-production-build
+    - generated-output-inspection
+    - typst-compilation
+    - resume-page-count
+    - resume-text-inspection
+    - output-hashes
+
+build_inputs:
+  - path: AGENTS.md
+    role: publication-and-privacy-requirements
+    sha256: 8483c1383b0545555123c957108110dc3513aadb3d96bfbd3752a153f5e70726
+  - path: README.md
+    role: repository-structure-and-build-commands
+    sha256: f726a527da75c49c8418f0c8338b51a06b983ca412db4f751b2513e13996433e
+  - path: spec/website.md
+    role: editorial-selection-and-privacy-policy
+    sha256: a1f18fe2a2dddde28018885de62edd6cf9114b890ca16b4cfca6f3db56f3939b
+
+templates:
+  - path: src/content.config.ts
+    role: Astro-content-schema
+    sha256: 721eb27acc7bf103838899bd9bed8c913347b7504fa14bebfd4af48aa0ba70f5
+  - path: templates/public-resume-layout.typ
+    role: generic-public-resume-layout
+    sha256: cf9319d95d89cdfe8d594701d42d5a925ba23ed5f986d9ce2376a714d2f1021c
+
+prompt:
+  identity: artifact-spec-plus-skill-plus-user-public-approval-2026-09-03
+  sha256: de982dccab2a87670f366d34a303477d0e0ab9bd447ff5ad9911ebd796d55d4a
+
+builder:
+  skill: knowledge-artifact-builder
+  skill_sha256: 9bf262fabc17566027b620ba01bdfd663084cc439620de9d55e789c1815eda9c
+  model: openai-codex/unknown
+
+prior_artifacts:
+  - path: builds/20260819T145238Z-site-88cfa65/artifact.md
+    role: style-and-diff-only
+    sha256: a9e11f76eb0d22a6fc32afef228784943ecd77851085c6d8b837605d2da8d0ec
+  - path: public/content-assets/resume-en.pdf
+    role: prior-published-style-and-diff-only
+    sha256: 63c571e26ffe6246ef5617dbe2c68e5c3e240a5b6a2062af58f0d870decfd69c

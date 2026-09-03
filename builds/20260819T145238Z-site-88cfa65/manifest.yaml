@@ -1,0 +1,77 @@
+version: 1
+build:
+  id: 20260819T145238Z-site-88cfa65
+  status: needs-review
+  started_at: 2026-08-19T14:52:38Z
+  completed_at: 2026-08-19T14:58:41Z
+artifact:
+  name: demian-personal-website
+  type: website
+  current_draft: generated/site-content.md
+  current_draft_sha256: a9e11f76eb0d22a6fc32afef228784943ecd77851085c6d8b837605d2da8d0ec
+  run_snapshot: builds/20260819T145238Z-site-88cfa65/artifact.md
+  run_snapshot_sha256: a9e11f76eb0d22a6fc32afef228784943ecd77851085c6d8b837605d2da8d0ec
+  output_paths:
+    - path: content/profile.json
+      sha256: cba275a75c1264b4e8534de510c52e9cbcf854e51e2e8867e4ef25b94f77215f
+    - path: artifact.yaml
+      sha256: 32ff2645849af4349ce2d7b54b8962eb6a901460be994d067b4a2127e9fdc80f
+    - path: spec/website.md
+      sha256: f1e8a45c6d61cf965cb2c9ab371531a6315c381d99fe60fb98c3404959818d6f
+knowledge_source:
+  lock: builds/20260819T145238Z-site-88cfa65/source.lock.yaml
+  lock_sha256: a2ca9df05689fdf893c01be0b207a219fbb7918916b0926918fa42110bb3584c
+  revision: 88cfa6560b91dc2dc51539febeb32df64fa046e1
+  revision_mode: snapshot-hash
+builder:
+  skill: knowledge-artifact-builder
+  skill_version: 1
+  skill_file_sha256: 9bf262fabc17566027b620ba01bdfd663084cc439620de9d55e789c1815eda9c
+  model: openai/gpt-5
+configuration:
+  artifact_spec:
+    path: artifact.yaml
+    sha256: 32ff2645849af4349ce2d7b54b8962eb6a901460be994d067b4a2127e9fdc80f
+  resolved_inputs:
+    path: builds/20260819T145238Z-site-88cfa65/resolved-inputs.yaml
+    sha256: b4fe4c9d7cfe31edc43273deb3e7c4896f83ca4fd2e30ffd791ce9184c9db0a8
+  evidence_plan:
+    path: builds/20260819T145238Z-site-88cfa65/evidence-plan.yaml
+    sha256: 52fe63947ad62b486801054b5ab4238cedeed22a9d6f780e7aaa7f88bbbbbc04
+  method:
+    path: builds/20260819T145238Z-site-88cfa65/method.md
+    sha256: 1f5ffbdb574087e6bc5f950700e1986f1d6c2fe187c6fc964205fe2e0f7f6358
+  template:
+    path: src/pages/contact.astro
+    sha256: 906ff66cff497a6afa16dd2bfa53babc9c65c6572ebf00be7756ebced8b4f966
+  validation_policy:
+    identity: knowledge-artifact-builder@1
+    sha256: 2766397941296317d93f4536f24b7d22abf8c6fd8a52adbb26cdcc09db906fc1
+  build_inputs:
+    - path: spec/website.md
+      sha256: f1e8a45c6d61cf965cb2c9ab371531a6315c381d99fe60fb98c3404959818d6f
+    - path: inputs/website-brief.md
+      sha256: a5ab1fba07cf13f0e479c3ef3dffb31a19b46592468074a33e6a770ed77d8eda
+    - identity: current-user-public-email-approval
+      sha256: bc6c78843ad1289c5ee98a665b80cb3310623383115cdcee49d8423f58490f9c
+provenance:
+  claim_map: builds/20260819T145238Z-site-88cfa65/claim-map.json
+  claim_map_sha256: 53c9be5da7bdc7179d3e432c2f1db67ee15a3a402b39ac23d3d24ca764d4de92
+  total_material_claims: 24
+  mapped_claims: 24
+  unsupported_claims: 0
+validation:
+  report: builds/20260819T145238Z-site-88cfa65/validation.md
+  report_sha256: fbaef54a9e88cc6573d3bc8d5a542461c25972c469cae1619e04add5d59658ff
+  status: passed-with-warnings
+  required_checks_not_run: 0
+  private_content_findings: 0
+  conflicts: 0
+review:
+  run_record: builds/20260819T145238Z-site-88cfa65/review.yaml
+  run_record_sha256: 88788f3dfbc0714d698b9f9fb8b774b5da54cf69daf8b50c8bafc9e47752965a
+  status: pending
+  latest_event: null
+publication:
+  status: not-published
+  latest_event: null

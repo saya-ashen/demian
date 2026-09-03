@@ -1,0 +1,11 @@
+version: 1
+build_id: 20260819T145238Z-site-88cfa65
+status: pending
+reviewer: null
+reviewed_at: null
+checks:
+  facts: pending
+  privacy: pending
+  presentation: pending
+notes: []
+publication_authorized: false

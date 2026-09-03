@@ -1,0 +1,24 @@
+version: 1
+type: artifact-publication
+build_id: 20260903T014001Z-site-ecc1a1f
+review_event: reviews/20260903T014001Z-site-ecc1a1f-20260903T025225Z.yaml
+review_event_sha256: e1f1d9570803c17ba47416a5493be99b6fcc6564561867bf1a0f015fee84315d
+published_at: 2026-09-03T02:54:36Z
+publication_scope: local-repository-working-tree
+published_outputs:
+  - path: published/site-content.md
+    sha256: 8b36a84634366b39decbbe86eab9511a0484e220db8f84515405240a646386fc
+  - path: published/public-resume-en.md
+    sha256: c41f52c4916e6b69da5da818d15126a62875ce67948958e66e4d67166109d02d
+  - path: published/public-resume-en.pdf
+    sha256: 5150dc40a3c8e8128a8e0dad05f2224d755709f9fec057c95b6454f332db4638
+  - path: public/content-assets/resume-en.pdf
+    sha256: 5150dc40a3c8e8128a8e0dad05f2224d755709f9fec057c95b6454f332db4638
+validation:
+  astro_build: passed
+  privacy_scan: passed
+  stale_wording_scan: passed
+  resume_page_count: 1
+  git_diff_check: passed
+deployment_status: not-deployed
+commit_status: not-committed

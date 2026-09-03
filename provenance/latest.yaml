@@ -1,14 +1,34 @@
 version: 1
 artifact: demian-personal-website
-latest_build_id: 20260808T022049Z-site-4f01fd6
+latest_build_id: 20260903T014001Z-site-ecc1a1f
 source:
   path: /home/saya/workspace/llm-wiki-agent
   revision_mode: snapshot-hash
-  base_revision: 4f01fd6cb5b21be9d94657a402a2b3758ab5a942
-  selected_file_digest: 3a0a4d97f2a95d382b1bf299d5928de9cfc4422c0c9057e871feebea6a908f93
+  base_revision: 88cfa6560b91dc2dc51539febeb32df64fa046e1
+  selected_file_digest: ecc1a1f032d2840252eaee0d495a410b4a5cbc5c54c67448b0bbcf5c0fef9ed6
 outputs:
-  generated: generated/site-content.md
-  run: builds/20260808T022049Z-site-4f01fd6
-  published: null
+  generated_site: generated/site-content.md
+  generated_resume_markdown: generated/public-resume-en.md
+  generated_resume_typst: generated/public-resume-en.typ
+  generated_resume_pdf: generated/public-resume-en.pdf
+  run: builds/20260903T014001Z-site-ecc1a1f
+  published_site: published/site-content.md
+  published_resume_markdown: published/public-resume-en.md
+  published_resume_pdf: published/public-resume-en.pdf
+  website_resume_asset: public/content-assets/resume-en.pdf
+validation:
+  status: passed-with-warnings
+  unsupported_claims: 0
+  private_content_findings: 0
 review:
-  status: pending
+  status: approved
+  event: reviews/20260903T014001Z-site-ecc1a1f-20260903T025225Z.yaml
+  event_sha256: e1f1d9570803c17ba47416a5493be99b6fcc6564561867bf1a0f015fee84315d
+publication:
+  status: published-local-working-tree
+  event: reviews/20260903T014001Z-site-ecc1a1f-20260903T025436Z-publication.yaml
+  event_sha256: 46092e8598985ad4ad4d115ba837dfa4feec23b37113a256cbf133f5e3c7e9ae
+  resume_replaced: true
+  deployment_status: not-deployed
+  commit_status: not-committed
+previous_build_id: 20260819T145238Z-site-88cfa65

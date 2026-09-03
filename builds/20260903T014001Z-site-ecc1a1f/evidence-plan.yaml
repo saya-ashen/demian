@@ -1,0 +1,144 @@
+version: 1
+build_id: 20260903T014001Z-site-ecc1a1f
+sections:
+  - section: positioning-and-current-direction
+    evidence_status: verified
+    knowledge_ids:
+      - entity.DemianKong
+      - concept.AppliedAICareerDirection
+      - source.current-status-update-2026-08
+    selected_claims:
+      - bioinformatics M.S. graduate and AI engineer in agent systems
+      - current AI-agent/LLM focus with scientific AI as a secondary domain
+      - preparing Ph.D. applications with no formal employer
+
+  - section: education
+    evidence_status: verified
+    knowledge_ids:
+      - entity.UniversityOfChineseAcademyOfSciences
+      - entity.JilinUniversity
+      - source.education-status-update-2026-06
+      - source.ucas-ms-transcript-zh
+      - source.ucas-ms-transcript-en
+    selected_claims:
+      - B.S. Pharmacy, Jilin University, 2019–2023
+      - M.S. Bioinformatics, UCAS, 2023–2026, graduated June 2026
+      - 16 courses, 30.0 total credits, and 23.0 degree-course credits in Chinese transcript
+      - transcripts do not report GPA or rank
+
+  - section: public-contact-language-and-recognition
+    evidence_status: user-confirmed
+    knowledge_ids:
+      - source.public-profile-update-2026-09
+      - entity.DemianKong
+      - source.master-profile
+    selected_claims:
+      - exact public email
+      - public GitHub and website
+      - IELTS overall 7.0
+      - provincial undergraduate innovation and entrepreneurship recognition
+
+  - section: chrona
+    evidence_status: verified
+    knowledge_ids:
+      - entity.Chrona
+      - source.public-profile-update-2026-09
+      - source.current-status-update-2026-08
+    selected_claims:
+      - local-first Task → Plan → Schedule → Execute → Review/Recover product loop
+      - approval, observable state, evidence, and recovery emphasis
+      - v0.3.1 public alpha release published 2026-09-02
+    exclusions:
+      - start date
+      - formal title
+      - users, adoption, and production deployment
+
+  - section: ngdc-experience
+    evidence_status: reviewed
+    knowledge_ids:
+      - entity.NationalGenomicsDataCenter
+      - source.current-status-update-2026-08
+      - source.archived-cv-experience-facts
+    selected_claims:
+      - graduate researcher, 2023–June 2026
+      - conversational agents for genomic and epigenomic databases
+      - iDog, BioKA, and EWAS contributions
+
+  - section: dingent
+    evidence_status: user-confirmed-and-official-preprint
+    knowledge_ids:
+      - entity.Dingent
+      - source.public-profile-update-2026-09
+      - source.ucas-ms-thesis
+    selected_claims:
+      - founder and lead architect/developer through June 2026
+      - MCP tools, graph-compiled workflows, checkpointed execution, and evidence integration
+      - integration across eight CNCB data resources during graduate work
+      - 100-concurrent-user workload and approximately 400 ms median framework-side latency
+      - transfer to group at graduation; technical support thereafter
+      - first-listed author of 2026 bioRxiv preprint
+    qualification: Metrics are project/thesis evidence and wording must not imply post-handover control.
+
+  - section: ewas-ai-assistant
+    evidence_status: user-confirmed
+    knowledge_ids:
+      - entity.EWASAIAssistant
+      - source.public-profile-update-2026-09
+      - source.ucas-ms-thesis
+    selected_claims:
+      - developer through June 2026
+      - entity retrieval, schema-constrained Text-to-SQL, verification/correction, synthesis, and visualization
+      - 30 expert-reviewed questions with manually verified reference SQL
+      - 23 fully correct and 25 fully or partially correct; 76.7% strict and 83.3% relaxed accuracy
+    calculation_checks:
+      - 23 / 30 = 76.666…%, rendered 76.7%
+      - 25 / 30 = 83.333…%, rendered 83.3%
+    qualification: Project/thesis evaluation evidence, not journal-reported metrics.
+
+  - section: publications
+    evidence_status: verified-and-reviewed
+    knowledge_ids:
+      - source.public-profile-update-2026-09
+      - source.publication-evidence-update-2026-09
+      - source.ewas-open-platform-pubmed-41243956
+      - source.master-profile
+      - source.archived-cv-experience-facts
+    selected_claims:
+      - Dingent first-author bioRxiv preprint and DOI
+      - EWAS Open Platform canonical 2026 citation and joint-first authorship
+      - iDog canonical citation and official first-five joint-first-author correction
+      - BioKA citation and contribution
+      - NGDC 2024 and 2025 citations
+      - NGDC 2026 citation and official consortium membership
+
+  - section: technical-skills
+    evidence_status: reviewed
+    knowledge_ids:
+      - entity.DemianKong
+      - source.master-profile
+      - source.archived-cv-experience-facts
+      - entity.Chrona
+      - entity.Dingent
+      - entity.EWASAIAssistant
+    selected_claims:
+      - programming, agent-framework, application, data, and systems toolkit supported across projects
+
+  - section: privacy-exclusions
+    evidence_status: verified
+    knowledge_ids:
+      - source.public-profile-update-2026-09
+      - concept.ApplicationReadiness
+      - concept.ProfileFactGovernance
+    excluded_private:
+      - GPA and rank
+      - school email
+      - phone
+      - address and postal code
+      - date of birth
+      - citizenship and student ID
+      - referee and mobility records
+
+gaps:
+  - Chrona start date, formal title, adoption, and production deployment remain unavailable and are omitted.
+  - Contribution details for older NGDC consortium papers remain abbreviated.
+  - GPA is intentionally excluded because this public-release request did not approve it.

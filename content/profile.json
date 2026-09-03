@@ -23,8 +23,8 @@
       "highlightsHeading": "Current focus",
       "highlights": [
         "M.S. in Bioinformatics from UCAS, completed in June 2026.",
-        "Developing Chrona, a local-first AI work executor for planning, scheduling, execution, and recovery.",
-        "Preparing Ph.D. applications centered on AI agents and LLM systems; scientific AI remains a secondary direction."
+        "Developing Chrona, now released as v0.3.1 public alpha, for inspectable planning, execution, and recovery.",
+        "First author of the Dingent bioRxiv preprint and joint first author of two Nucleic Acids Research Database Issue papers."
       ],
       "quickLinksHeading": "Explore",
       "quickLinks": [
@@ -69,13 +69,19 @@
       ],
       "recognitionHeading": "Recognition",
       "recognition": [
-        "Provincial-level Innovation and Entrepreneurship Training Program honor at Jilin University."
+        "Provincial-level Innovation and Entrepreneurship Training Program honor at Jilin University.",
+        "English: IELTS overall 7.0."
       ]
     },
     "contact": {
       "title": "Contact",
       "intro": "I am currently preparing Ph.D. applications focused on AI agents and LLM systems, and I am open to research and engineering conversations.",
       "items": [
+        {
+          "label": "Email",
+          "value": "c3313433633@gmail.com",
+          "href": "mailto:c3313433633@gmail.com"
+        },
         {
           "label": "GitHub",
           "value": "github.com/saya-ashen",
@@ -94,7 +100,7 @@
           "highlights": [
             "Building a local-first AI work executor around the loop Task → Plan → Schedule → Execute → Review/Recover.",
             "Exploring explicit approval boundaries, observable execution state, recoverable failures, and preserved results/evidence.",
-            "Current repository evidence describes version 0.2.0 alpha/local-development software, not a stable production release."
+            "Version 0.3.1 is the current public alpha release; the project is not presented as stable production software."
           ]
         },
         {
@@ -109,11 +115,11 @@
         },
         {
           "organization": "Dingent",
-          "summary": "Historical Lead Architect and Maintainer · 2024 – June 2026 · Technical support thereafter",
+          "summary": "Founder and Lead Architect · 2024 – June 2026 · Technical support thereafter",
           "highlights": [
-            "Led and maintained an open-source, general-purpose LLM-agent development framework through M.S. graduation.",
-            "Worked with a LangGraph backend, Next.js chat interface, React administration UI, modular plugins, and UI-based configuration.",
-            "The project was transferred to the group at graduation; the current relationship is technical support only."
+            "Founded and led an open-source agent framework with MCP-based tools, graph-compiled workflows, checkpointed execution, and cross-database evidence integration.",
+            "Integrated the framework across eight CNCB data resources during graduate work; a 100-concurrent-user load test measured approximately 400 ms median framework-side latency.",
+            "Published the work as a first-author bioRxiv preprint; the project was transferred to the group at graduation and the current relationship is technical support only."
           ]
         },
         {
@@ -121,8 +127,8 @@
           "summary": "Historical Developer · 2024 – June 2026 · NGDC BioAgent Portal",
           "highlights": [
             "Developed a natural-language data-access system for the EWAS Open Platform during the M.S. period.",
-            "Connected intent parsing, SQL generation, data retrieval, and LLM synthesis with LangChain/LangGraph and FastAPI.",
-            "Supported interactive radar, violin, and line visualizations; personal project work ended at M.S. graduation."
+            "Connected biomedical entity retrieval, schema-constrained Text-to-SQL, execution-based verification and correction, synthesis, and interactive visualization.",
+            "On 30 expert-reviewed questions with manually verified reference SQL, achieved 76.7% strict accuracy and 83.3% fully-or-partially-correct accuracy; personal work ended at graduation."
           ]
         },
         {
@@ -149,7 +155,7 @@
       "intro": "My work has progressed from scientific data-access systems to general-purpose AI work execution, with a continuing interest in reliable, inspectable agent workflows.",
       "projectsHeading": "Projects",
       "publicationsHeading": "Selected Publications",
-      "publicationsNote": "Publication metadata is regenerated from the current Wiki snapshot. The EWAS Open Platform record uses the verified 2026 Nucleic Acids Research citation."
+      "publicationsNote": "† Equal contribution / joint first author. The Dingent manuscript is a bioRxiv preprint; the iDog designation follows the official correction expanding joint-first authorship to the first five authors. EWAS and Dingent evaluation figures elsewhere on this site are project/thesis evidence, not journal-reported metrics."
     }
   }
 }

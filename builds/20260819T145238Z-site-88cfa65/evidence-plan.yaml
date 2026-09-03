@@ -1,0 +1,37 @@
+version: 1
+source_snapshot:
+  revision_mode: snapshot-hash
+  base_revision: 88cfa6560b91dc2dc51539febeb32df64fa046e1
+  selected_file_digest: 4461a5876e3136d8a81ca7029f83d55e7d05fe4a92ad00e79380a1f20d674110
+sections:
+  home: verified
+  about: verified
+  experience: verified
+  projects: verified
+  publications: reviewed
+  contact:
+    status: verified
+    evidence:
+      - wiki/entities/DemianKong.md
+    outputs:
+      - content/profile.json#profile.contact.items[0]
+      - generated/site-content.md#public-contact
+    publication_approval:
+      identity: current-user-public-email-approval
+      scope: exact address only
+      status: approved
+privacy:
+  approved_public:
+    - exact email address confirmed in the current user request
+    - GitHub profile
+  excluded_private:
+    - all other application and school email addresses
+    - phone number
+    - date of birth
+    - address
+    - citizenship and gender
+    - mobility declarations
+    - referee contact records
+  excluded_unverified:
+    - GPA and academic rank
+    - unpublished thesis performance metrics

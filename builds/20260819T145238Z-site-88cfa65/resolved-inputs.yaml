@@ -1,0 +1,57 @@
+version: 1
+artifact_requirements:
+  purpose: Add the exact user-approved email address to the public contact page.
+  audience: Research collaborators, Ph.D. admissions readers, and AI engineering collaborators.
+  language: en
+  output_path: generated/site-content.md and content/profile.json
+  required_sections:
+    - contact
+selectors:
+  include:
+    - current Wiki-supported public website claims
+    - exact contact email found in the authoritative profile and explicitly approved by the user for public release
+  exclude:
+    - all other application and school emails
+    - phone number, date of birth, address, citizenship, mobility, and referee records
+    - stale or superseded wording
+    - unverified GPA/rank
+    - unpublished thesis metrics
+policy:
+  privacy: public-only-with-exact-address-user-approval
+  publication_requires_human_review: true
+  knowledge_source_read_only: true
+  fail_on_unsupported_claims: true
+  fail_on_private_content: true
+  fail_on_source_mutation: true
+validation:
+  required_checks:
+    - source-containment
+    - source-unchanged
+    - claim-provenance
+    - exact-email-only
+    - privacy
+    - astro-build
+    - generated-output
+    - diff-check
+build_inputs:
+  - path: artifact.yaml
+    role: artifact project specification
+    sha256: 32ff2645849af4349ce2d7b54b8962eb6a901460be994d067b4a2127e9fdc80f
+  - path: spec/website.md
+    role: public content and privacy requirements
+    sha256: f1e8a45c6d61cf965cb2c9ab371531a6315c381d99fe60fb98c3404959818d6f
+  - path: inputs/website-brief.md
+    role: website requirements
+    sha256: a5ab1fba07cf13f0e479c3ef3dffb31a19b46592468074a33e6a770ed77d8eda
+  - identity: current-user-public-email-approval
+    role: publication approval for exact address
+    recorded_at: 2026-08-19T14:52:38Z
+    sha256: bc6c78843ad1289c5ee98a665b80cb3310623383115cdcee49d8423f58490f9c
+builder:
+  skill: knowledge-artifact-builder
+  skill_sha256: 9bf262fabc17566027b620ba01bdfd663084cc439620de9d55e789c1815eda9c
+  model: openai/gpt-5
+prior_artifact:
+  path: builds/20260808T022049Z-site-4f01fd6/artifact.md
+  role: style-and-diff-only
+  sha256: 82fbae6e0c1643cc5b3b5d79f423bcd50ac7f87cff83d1e07fe4d54304d31b18

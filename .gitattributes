@@ -1,0 +1,5 @@
+*.pdf binary
+builds/**/output.diff whitespace=-trailing-space
+builds/**/resume-en.md whitespace=-trailing-space
+generated/public-resume-en.md whitespace=-trailing-space
+published/public-resume-en.md whitespace=-trailing-space

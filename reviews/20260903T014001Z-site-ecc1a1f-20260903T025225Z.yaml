@@ -1,0 +1,15 @@
+version: 1
+type: artifact-review
+build_id: 20260903T014001Z-site-ecc1a1f
+status: approved
+reviewer: profile-owner
+reviewed_at: 2026-09-03T02:52:25Z
+checks:
+  facts: approved
+  privacy: approved
+  presentation: approved
+notes:
+  - The profile owner explicitly approved the exact build after generation.
+  - IELTS 7.0 and the specified EWAS and Dingent project claims are approved for public use.
+  - GPA remains excluded from the public website and public resume.
+  - Dingent wording retains the June 2026 handover and technical-support-only qualification.

@@ -1,0 +1,24 @@
+version: 1
+type: artifact-fact-correction
+recorded_at: 2026-08-22T06:58:18Z
+subject: Demian Kong
+fact: EWAS Open Platform 2026 authorship contribution
+correct_value:
+  role: joint first author
+  equivalent_wording:
+    - co-first author
+    - equal-contributing author
+  citation: "Yang F†, Xiong Z†, Zong W†, Kong D†, et al. Nucleic Acids Research. 2026;54(D1):D1061–D1068."
+  doi: 10.1093/nar/gkaf1155
+  pmid: "41243956"
+verification:
+  verifier: Demian Kong
+  verified_at: 2026-08-22
+supersedes:
+  - build_id: 20260819T145238Z-site-88cfa65
+    invalid_or_incomplete_claim: "The public resume and publication content omitted EWAS equal-contribution markers."
+changes:
+  - Updated public EWAS and iDog author strings with equal-contribution markers.
+  - Replaced the public resume PDF with the corrected joint-first-author version.
+  - Rebuilt the static site output.
+status: applied

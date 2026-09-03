@@ -1,6 +1,6 @@
 ---
-order: 1
-authors: "Yang F, Xiong Z, Zong W, Kong D, et al."
+order: 2
+authors: "Yang F†, Xiong Z†, Zong W†, Kong D†, et al."
 year: 2026
 title: "EWAS Open Platform 2026: a deeply integrated resource for epigenome-wide association studies"
 journal: "Nucleic Acids Research"
