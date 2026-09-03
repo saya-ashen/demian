@@ -24,11 +24,13 @@
 }
 
 html {
+	overflow-x: clip;
 	scroll-behavior: smooth;
 }
 
 body {
-	min-width: 320px;
+	min-width: 0;
+	overflow-x: clip;
 	margin: 0;
 	background:
 		radial-gradient(
@@ -275,80 +277,14 @@ p {
 	background: var(--ink);
 	box-shadow: var(--shadow);
 }
-.hero-art::before,
-.hero-art::after {
+.hero-photo {
 	position: absolute;
-	border: 1px solid rgba(199, 239, 104, 0.35);
-	border-radius: 50%;
-	content: "";
-}
-.hero-art::before {
-	width: 360px;
-	height: 360px;
-	top: 12%;
-	left: -16%;
-	transform: rotate(-28deg) skewY(18deg);
-}
-.hero-art::after {
-	width: 430px;
-	height: 210px;
-	top: 28%;
-	right: -20%;
-	transform: rotate(-35deg);
-}
-.orbit {
-	position: absolute;
-	width: 280px;
-	height: 280px;
-	top: 21%;
-	left: 16%;
-	border: 1px solid rgba(245, 246, 241, 0.32);
-	border-radius: 50%;
-	transform: rotate(-30deg) skewY(15deg);
-}
-.orbit::before {
-	position: absolute;
-	top: 11%;
-	left: 14%;
-	width: 11px;
-	height: 11px;
-	border-radius: 50%;
-	background: var(--coral);
-	box-shadow:
-		0 0 0 9px rgba(255, 135, 109, 0.13),
-		0 0 25px var(--coral);
-	content: "";
-}
-.orbit::after {
-	position: absolute;
-	right: 14%;
-	bottom: 16%;
-	width: 7px;
-	height: 7px;
-	border-radius: 50%;
-	background: var(--lime);
-	box-shadow: 0 0 20px var(--lime);
-	content: "";
-}
-.art-label {
-	position: absolute;
-	right: 24px;
-	bottom: 24px;
-	left: 24px;
-	display: flex;
-	align-items: flex-end;
-	justify-content: space-between;
-	color: var(--paper);
-}
-.art-label strong {
-	max-width: 180px;
-	font-size: 1.15rem;
-	line-height: 1.2;
-}
-.art-label span {
-	color: var(--lime);
-	font-family: "DM Mono", monospace;
-	font-size: 0.68rem;
+	inset: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center 32%;
 }
 
 .home-grid {
@@ -701,15 +637,15 @@ p {
 	}
 	.hero {
 		min-height: auto;
+		margin-bottom: 52px;
 		grid-template-columns: 1fr;
 		gap: 44px;
 	}
 	.hero-art {
 		min-height: 300px;
 	}
-	.orbit {
-		top: 6%;
-		left: 22%;
+	.hero-photo {
+		object-position: center 27%;
 	}
 	.home-grid,
 	.about-layout,
@@ -744,11 +680,8 @@ p {
 		min-height: 260px;
 		border-radius: 24px;
 	}
-	.orbit {
-		width: 220px;
-		height: 220px;
-		top: 9%;
-		left: 17%;
+	.hero-photo {
+		object-position: center 24%;
 	}
 	.panel,
 	.card {

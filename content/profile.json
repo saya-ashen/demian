@@ -15,6 +15,10 @@
       "title": "Home",
       "name": "Demian Kong",
       "headline": "AI Agents & LLM Systems · Scientific AI",
+      "portrait": {
+        "src": "content-assets/profile-portrait.webp",
+        "alt": "Portrait of Demian Kong"
+      },
       "bio": "I build AI systems that turn complex data and tasks into inspectable, executable workflows. My work connects agent architecture, reliable tool use, and scientific data systems, with current development focused on Chrona.",
       "highlightsHeading": "Current focus",
       "highlights": [

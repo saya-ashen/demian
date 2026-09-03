@@ -25,12 +25,17 @@ const toSitePath = (href: string) => {
         <a class="button secondary" href={toSitePath('/contact')}>Get in touch</a>
       </div>
     </div>
-    <div class="hero-art" aria-hidden="true">
-      <div class="orbit"></div>
-      <div class="art-label">
-        <strong>Where biology meets intelligent systems.</strong>
-        <span>01 / 04</span>
-      </div>
+    <div class="hero-art">
+      <img
+        class="hero-photo"
+        src={`${baseUrl}${home.portrait.src}`}
+        alt={home.portrait.alt}
+        width="900"
+        height="1125"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+      />
     </div>
   </section>
 

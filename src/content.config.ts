@@ -18,6 +18,10 @@ const profile = defineCollection({
 			title: z.string(),
 			name: z.string(),
 			headline: z.string(),
+			portrait: z.object({
+				src: z.string(),
+				alt: z.string(),
+			}),
 			bio: z.string(),
 			highlightsHeading: z.string(),
 			highlights: z.array(z.string()),
