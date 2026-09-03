@@ -25,10 +25,14 @@ review:
   event: reviews/20260903T014001Z-site-ecc1a1f-20260903T025225Z.yaml
   event_sha256: e1f1d9570803c17ba47416a5493be99b6fcc6564561867bf1a0f015fee84315d
 publication:
-  status: published-local-working-tree
+  status: deployed
   event: reviews/20260903T014001Z-site-ecc1a1f-20260903T025436Z-publication.yaml
   event_sha256: 46092e8598985ad4ad4d115ba837dfa4feec23b37113a256cbf133f5e3c7e9ae
+  deployment_event: reviews/20260903T014001Z-site-ecc1a1f-20260903T030219Z-deployment.yaml
+  deployment_event_sha256: 1e30cfee890db748b723b45acc45b674c811011369e3777cb725e3768dcad267
   resume_replaced: true
-  deployment_status: not-deployed
-  commit_status: not-committed
+  deployment_status: success
+  commit_status: committed-and-pushed
+  content_commit: 319f7a96dc589e17b35bf400fefe5aab42de8723
+  site_url: https://saya-ashen.github.io/demian/
 previous_build_id: 20260819T145238Z-site-88cfa65

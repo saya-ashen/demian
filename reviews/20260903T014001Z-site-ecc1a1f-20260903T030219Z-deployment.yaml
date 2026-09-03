@@ -1,0 +1,19 @@
+version: 1
+type: artifact-deployment
+build_id: 20260903T014001Z-site-ecc1a1f
+review_event: reviews/20260903T014001Z-site-ecc1a1f-20260903T025225Z.yaml
+review_event_sha256: e1f1d9570803c17ba47416a5493be99b6fcc6564561867bf1a0f015fee84315d
+publication_event: reviews/20260903T014001Z-site-ecc1a1f-20260903T025436Z-publication.yaml
+publication_event_sha256: 46092e8598985ad4ad4d115ba837dfa4feec23b37113a256cbf133f5e3c7e9ae
+deployed_at: 2026-09-03T03:01:28Z
+recorded_at: 2026-09-03T03:02:19Z
+repository: https://github.com/saya-ashen/demian
+branch: main
+content_commit: 319f7a96dc589e17b35bf400fefe5aab42de8723
+workflow_run: https://github.com/saya-ashen/demian/actions/runs/33709792315
+status: success
+site_url: https://saya-ashen.github.io/demian/
+verification:
+  live_html: passed
+  required_claims: passed
+  live_resume_sha256: 5150dc40a3c8e8128a8e0dad05f2224d755709f9fec057c95b6454f332db4638
