@@ -1,0 +1,16 @@
+version: 1
+type: artifact-review
+build_id: 20261030T125203Z-site-public-107c40b
+status: approved
+reviewer: user
+reviewed_at: '2026-10-30T12:52:03.331Z'
+checks:
+  facts: approved
+  privacy: approved
+  presentation: approved
+notes:
+  - User approved current site and more spacious resume and explicitly requested online deployment.
+  - User authorized excluding internal file inventories and retaining intermediate records locally.
+  - >-
+    Website and resume bytes are identical to the reviewed draft; only public provenance metadata was
+    minimized.

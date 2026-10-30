@@ -1,38 +1,25 @@
 version: 1
 artifact: demian-personal-website
-latest_build_id: 20260903T014001Z-site-ecc1a1f
+latest_build_id: 20261030T125203Z-site-public-107c40b
 source:
-  path: /home/saya/workspace/llm-wiki-agent
+  name: career-ops
+  revision: e0126b731255e66aa1089783fcc117cc7118c448
   revision_mode: snapshot-hash
-  base_revision: 88cfa6560b91dc2dc51539febeb32df64fa046e1
-  selected_file_digest: ecc1a1f032d2840252eaee0d495a410b4a5cbc5c54c67448b0bbcf5c0fef9ed6
+  selected_file_digest: 107c40b3768988cab0da765cf128bc7b2927ce78d041ffeff38dd86e63d85c8a
 outputs:
   generated_site: generated/site-content.md
-  generated_resume_markdown: generated/public-resume-en.md
-  generated_resume_typst: generated/public-resume-en.typ
-  generated_resume_pdf: generated/public-resume-en.pdf
-  run: builds/20260903T014001Z-site-ecc1a1f
-  published_site: published/site-content.md
-  published_resume_markdown: published/public-resume-en.md
-  published_resume_pdf: published/public-resume-en.pdf
-  website_resume_asset: public/content-assets/resume-en.pdf
+  generated_resume: generated/public-resume-en.pdf
+  run: builds/20261030T125203Z-site-public-107c40b
 validation:
   status: passed-with-warnings
+  mapped_claim_entries: 205
   unsupported_claims: 0
-  private_content_findings: 0
 review:
   status: approved
-  event: reviews/20260903T014001Z-site-ecc1a1f-20260903T025225Z.yaml
-  event_sha256: e1f1d9570803c17ba47416a5493be99b6fcc6564561867bf1a0f015fee84315d
+  event: reviews/20261030T125203Z-site-public-107c40b-approval.yaml
+  event_sha256: 1d72c67e707e2eb757f39ddf285deea620e47db283bb70b401749a5de9d0df59
 publication:
-  status: deployed
-  event: reviews/20260903T014001Z-site-ecc1a1f-20260903T025436Z-publication.yaml
-  event_sha256: 46092e8598985ad4ad4d115ba837dfa4feec23b37113a256cbf133f5e3c7e9ae
-  deployment_event: reviews/20260903T014001Z-site-ecc1a1f-20260903T030219Z-deployment.yaml
-  deployment_event_sha256: 1e30cfee890db748b723b45acc45b674c811011369e3777cb725e3768dcad267
-  resume_replaced: true
-  deployment_status: success
-  commit_status: committed-and-pushed
-  content_commit: 319f7a96dc589e17b35bf400fefe5aab42de8723
+  status: approved-awaiting-deployment
+  event: reviews/20261030T125203Z-site-public-107c40b-publication.yaml
+  event_sha256: b185386ff0df7ed44706a796e9cdc61b336beb19093a68bf1d1bc261ec57e7fc
   site_url: https://saya-ashen.github.io/demian/
-previous_build_id: 20260819T145238Z-site-88cfa65

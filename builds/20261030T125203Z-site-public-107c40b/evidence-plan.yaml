@@ -1,0 +1,52 @@
+sections:
+  - section: Home and research direction
+    sources:
+      - cv.md#RESEARCH INTERESTS
+      - article-digest.md#3. Chrona
+    status: reviewed
+    selection: Need-driven capability growth; verification as supporting method, not a completed general result.
+  - section: Education and skills
+    sources:
+      - cv.md#EDUCATION
+      - cv.md#TECHNICAL SKILLS
+    status: reviewed
+    selection: Degrees, thesis title, research training and scholarships. Exclude GPA/rank and administrative records.
+  - section: Projects and experience
+    sources:
+      - cv.md#RESEARCH & SYSTEMS EXPERIENCE
+      - article-digest.md#1. Dingent
+      - article-digest.md#2. EWAS
+      - article-digest.md#3. Chrona
+      - article-digest.md#6. ProLLaVA
+      - article-digest.md#7. iDog
+    status: reviewed
+    selection: >-
+      Four projects, bounded dates/roles, contribution and method. Previously approved EWAS benchmark size
+      only; no new unpublished performance metrics.
+  - section: Publications
+    sources:
+      - cv.md#PUBLICATIONS & PREPRINTS
+      - article-digest.md#7. iDog
+    status: reviewed
+    selection: >-
+      Co-first markers, preprint status, canonical DOIs; consortium attribution. Omit unsupported legacy
+      volume/page details.
+  - section: Contact
+    sources:
+      - cv.md#header
+      - config/profile.yml#target_roles
+    status: reviewed
+    selection: Email exact-value public approval in current conversation; GitHub and research collaboration direction.
+  - section: Public resume
+    sources:
+      - cv.md
+      - article-digest.md
+    status: reviewed
+    selection: One-page subset of website claims, no private referees or unpublished experiments.
+exclusions:
+  - Private application and identity records
+  - Unapproved unpublished findings
+  - Nonpublic project evidence
+  - Private manuscript revision status
+  - Unsupported legacy metadata
+derived_sources: No story-bank file present; no derived interview materials used.

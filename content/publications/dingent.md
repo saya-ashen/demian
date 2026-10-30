@@ -1,8 +1,8 @@
 ---
 order: 1
-authors: "Kong D, Bei S, Wu Y, Tang B, Zhao W"
+authors: "Kong D†, Bei S, Wu Y, Tang B†, Zhao W"
 year: 2026
-title: "Dingent: An Easily Deployable Database Retrieval and Integration Agent framework"
+title: "Dingent: An Easily Deployable Database Retrieval and Integration Agent Framework"
 journal: "bioRxiv preprint"
 volume: ""
 links:

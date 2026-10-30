@@ -9,6 +9,4 @@ pages: "D1061–D1068"
 links:
   - label: "DOI"
     href: "https://doi.org/10.1093/nar/gkaf1155"
-  - label: "PubMed"
-    href: "https://pubmed.ncbi.nlm.nih.gov/41243956/"
 ---

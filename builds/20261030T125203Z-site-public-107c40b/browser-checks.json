@@ -1,0 +1,80 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "route": "/",
+      "status": "passed"
+    },
+    {
+      "width": 1440,
+      "route": "/about/",
+      "status": "passed"
+    },
+    {
+      "width": 1440,
+      "route": "/research/",
+      "status": "passed"
+    },
+    {
+      "width": 1440,
+      "route": "/experience/",
+      "status": "passed"
+    },
+    {
+      "width": 1440,
+      "route": "/contact/",
+      "status": "passed"
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "status": "passed"
+    },
+    {
+      "width": 390,
+      "route": "/about/",
+      "status": "passed"
+    },
+    {
+      "width": 390,
+      "route": "/research/",
+      "status": "passed"
+    },
+    {
+      "width": 390,
+      "route": "/experience/",
+      "status": "passed"
+    },
+    {
+      "width": 390,
+      "route": "/contact/",
+      "status": "passed"
+    },
+    {
+      "width": 320,
+      "route": "/",
+      "status": "passed"
+    },
+    {
+      "width": 320,
+      "route": "/about/",
+      "status": "passed"
+    },
+    {
+      "width": 320,
+      "route": "/research/",
+      "status": "passed"
+    },
+    {
+      "width": 320,
+      "route": "/experience/",
+      "status": "passed"
+    },
+    {
+      "width": 320,
+      "route": "/contact/",
+      "status": "passed"
+    }
+  ],
+  "externalNetwork": "blocked; links not verified externally"
+}

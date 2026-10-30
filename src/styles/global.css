@@ -292,6 +292,39 @@ p {
 	grid-template-columns: 1.1fr 0.9fr;
 	gap: 22px;
 }
+.page-shell > section + section {
+	margin-top: 64px;
+}
+
+.project-details {
+	display: grid;
+	gap: 18px;
+	margin: 24px 0 0;
+}
+.project-details dt {
+	font-size: 0.75rem;
+	font-weight: 800;
+	color: var(--ink);
+}
+.project-details dd {
+	margin: 4px 0 0;
+	color: var(--ink-soft);
+	font-size: 0.9rem;
+}
+.project-card {
+	display: flex;
+	flex-direction: column;
+}
+.project-card .card-links {
+	padding-top: 24px;
+	margin-top: auto;
+}
+
+a:focus-visible {
+	outline: 3px solid var(--ink);
+	outline-offset: 5px;
+}
+
 .section-heading {
 	display: flex;
 	align-items: baseline;
@@ -303,7 +336,10 @@ p {
 	margin: 0;
 }
 .section-heading .kicker {
-	white-space: nowrap;
+	flex-shrink: 0;
+}
+.section-heading {
+	flex-wrap: wrap;
 }
 
 .panel,

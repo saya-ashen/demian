@@ -27,7 +27,7 @@ const publications = (await getCollection('publications')).sort(
     <div class="card-grid">
       {
         projects.map(({ data }, index) => (
-          <article class="card">
+          <article class="card project-card">
             <div class="card-top">
               <p class="meta">Project / 0{index + 1}</p>
               <span class="card-index">↗</span>
@@ -35,6 +35,14 @@ const publications = (await getCollection('publications')).sort(
             <h3>{data.title}</h3>
             <p class="role"><strong>{data.role}</strong> · {data.period}</p>
             <p>{data.description}</p>
+            <dl class="project-details">
+              {data.highlights.map((highlight) => (
+                <div>
+                  <dt>{highlight.label}</dt>
+                  <dd>{highlight.text}</dd>
+                </div>
+              ))}
+            </dl>
             {data.links.length > 0 && (
               <div class="card-links">
                 {data.links.map((link) => (
@@ -60,7 +68,7 @@ const publications = (await getCollection('publications')).sort(
             <span class="publication-year">{data.year}</span>
             <div>
               <p class="publication-title">{data.title}</p>
-              <p>{data.authors}. <em>{data.journal}</em>, {data.volume}{data.pages ? `, ${data.pages}` : ''}.</p>
+              <p>{data.authors}. <em>{data.journal}</em>{data.volume ? `, ${data.volume}` : ''}{data.pages ? `, ${data.pages}` : ''}.</p>
               {data.links.length > 0 && (
                 <div class="card-links publication-links">
                   {data.links.map((link) => (

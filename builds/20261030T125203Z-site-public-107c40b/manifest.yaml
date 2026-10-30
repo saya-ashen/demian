@@ -1,0 +1,96 @@
+version: 1
+build:
+  id: 20261030T125203Z-site-public-107c40b
+  status: needs-review
+  started_at: '2026-10-30T12:52:03.330Z'
+  completed_at: '2026-10-30T12:52:03.330Z'
+artifact:
+  name: demian-personal-website
+  type: website
+  current_draft: generated/site-content.md
+  run_snapshot: builds/20261030T125203Z-site-public-107c40b/artifact.md
+  run_snapshot_sha256: 24e89b44427e1e7be45b162a31e6535af10280a58e344c31522bdb069cfc0444
+knowledge_source:
+  lock: builds/20261030T125203Z-site-public-107c40b/source.lock.yaml
+  lock_sha256: d2084b1f54b5351ce46ec17061a6b107f832f7e58140f1f6ebab351dfdbdd631
+  revision: e0126b731255e66aa1089783fcc117cc7118c448
+  revision_mode: snapshot-hash
+builder:
+  skill: knowledge-artifact-builder
+  model: unknown
+configuration:
+  artifact_spec:
+    path: artifact.yaml
+    sha256: a3d0b33c74a5418e097b7489fc4ea9dfec47597ca07e67732dfffb7a51358887
+  resolved_inputs:
+    path: builds/20261030T125203Z-site-public-107c40b/resolved-inputs.yaml
+    sha256: de066de88503e714e1ad97ec2232e1f778e68379a082bbfe852afec07b39e105
+  evidence_plan:
+    path: builds/20261030T125203Z-site-public-107c40b/evidence-plan.yaml
+    sha256: 3e46007ccd76590cc9ca77a05faa0668421eb6e3254beaf443ae4339ef60d9a8
+  method:
+    path: builds/20261030T125203Z-site-public-107c40b/method.md
+    sha256: d2822df381cbab38e254d81ea07618af74e317dffae5f1fcd5c20fb78a928d0e
+provenance:
+  claim_map: builds/20261030T125203Z-site-public-107c40b/claim-map.json
+  claim_map_sha256: 6e98b4bb031d8e763243efe2fca00a8a73085a053eae49717053bbb4ff24c612
+  total_material_claims: 205
+  mapped_claims: 205
+  unsupported_claims: 0
+validation:
+  report: builds/20261030T125203Z-site-public-107c40b/validation.md
+  report_sha256: daddd211d86e68353ab46590567a98e677651f2214fc3d4cf244f0bacd810648
+  status: passed-with-warnings
+  required_checks_not_run: 0
+  private_content_findings: 0
+review:
+  run_record: builds/20261030T125203Z-site-public-107c40b/review.yaml
+  run_record_sha256: 03e458d3aedae140c26ef2ca04328241f5d9c9dea0fd2305079f52ce64229e0f
+  status: pending
+publication:
+  status: not-published
+outputs:
+  - path: content/profile.json
+    sha256: aefe52baea67cc7ef0309b09a6ef74fc81929197cafe37810f4b114ad89b6215
+  - path: content/projects/chrona.md
+    sha256: 387864ddced1d80e1bd3688bc2e24bc17d8960258f70c2deb2978fd91b4e46dc
+  - path: content/projects/dingent.md
+    sha256: 5ec9150deca437ac5263d07d41b31eb25e9f9d53b4ada79c93c6fe5938ccf186
+  - path: content/projects/ewas-ai-assistant.md
+    sha256: 9726c1b6029fd820172389b5098452d6c138b3072a76723e01fb160ab0e85c3b
+  - path: content/projects/prollava.md
+    sha256: 3ac551dc2638bfac55f6a0b0381b49ec54675797c961963e982e8f33540b452b
+  - path: content/publications/bioka.md
+    sha256: b9f252ab5894d578661be0a505f8fee91f0578d4ff9280c471dcf3f26ec1f693
+  - path: content/publications/dingent.md
+    sha256: ca7aff19ce6d0337f1f6b46928d4a255eb92b9e4d66aa0f374df9ddc26b9c8c9
+  - path: content/publications/ewas-open-platform.md
+    sha256: 4431570cd21cda985f9f16f4a7d8e8a4e2b5c5424065b14fb745bc1f5da63c9b
+  - path: content/publications/idog.md
+    sha256: d2cc94ad6cf23937e50a97e55ce3a051b8d2df0837a058308df1a114b79421a4
+  - path: content/publications/ngdc-2024.md
+    sha256: 3deb594f713cb24e3f13a5b1d6737da9ca0e45f7d85eeee6ec32904940106eda
+  - path: content/publications/ngdc-2025.md
+    sha256: ae5366f2ceb92dd323a21b226be71309c1b17b751eea2beec1c2f990a73bae6e
+  - path: content/publications/ngdc-2026.md
+    sha256: 634166a5a607f3feca7e58b161963b8dd674bbab36cd10a5a5a3d0a6d29aabc5
+  - path: src/content.config.ts
+    sha256: dd945a00d1fa40af4d2ab95e40e5af529238912d9ce44f36bb4bdea42eb12cb9
+  - path: src/pages/index.astro
+    sha256: 88b381fa059c5a1eaab1d079492b69f8eccddc6ed8154beb4d2be435377cce65
+  - path: src/pages/research.astro
+    sha256: fb82eefe4dc2b7325e6281fc88ef7d6b836096e4be093b1e46dc5a721557d6eb
+  - path: src/layouts/Layout.astro
+    sha256: 7a3fb4c6b3de40172438c7cd0fd6cd4d07dfa7c688d4ecebfc8b10b3499f7ca1
+  - path: src/styles/global.css
+    sha256: cc79420cff1d0175df93b735095db7c7742af7c950dfc919cc31011ee22fd535
+  - path: templates/public-resume-layout.typ
+    sha256: cf2e36de31b5e735c3ad99425cbcbb930b7521c3d13a17b9e0d80e4333360c38
+  - path: generated/public-resume-en.md
+    sha256: f4d065498fb0ad38a94a7adb2b5eee2c6b64d0503de0450000dc0f5a75e5bafb
+  - path: generated/public-resume-en.typ
+    sha256: e1f63d0e8c7aeba4216e448ccef6b398c42815ec0f34c63e83ba437a0816a03b
+  - path: generated/public-resume-en.pdf
+    sha256: 305e3d13cb7c12a03eeca50e0ceb1d85ec07336a58054608cec79bcfa62cc9e5
+  - path: public/content-assets/resume-en.pdf
+    sha256: 305e3d13cb7c12a03eeca50e0ceb1d85ec07336a58054608cec79bcfa62cc9e5

@@ -9,17 +9,17 @@
     paper: "a4",
     margin: (left: 1.35cm, right: 1.35cm, top: 1cm, bottom: 1cm),
   )
-  set text(font: "Libertinus Serif", size: 10.1pt, fill: ink)
-  set par(leading: 0.52em, spacing: 0.34em, justify: true)
-  set list(indent: 10pt, body-indent: 3.8pt, spacing: 0.27em)
+  set text(font: "Libertinus Serif", size: 11pt, fill: ink)
+  set par(leading: 0.65em, spacing: 0.48em, justify: true)
+  set list(indent: 11pt, body-indent: 4pt, spacing: 0.38em)
   show link: it => text(fill: accent, it)
 
   align(center)[
     #text(size: 24pt, weight: "bold", fill: accent)[#name]
     #v(2pt)
-    #text(size: 9.1pt, fill: muted)[#contact]
+    #text(size: 10pt, fill: muted)[#contact]
     #v(1.6pt)
-    #text(size: 9.3pt, weight: "semibold", fill: ink)[#tagline]
+    #text(size: 10.2pt, weight: "semibold", fill: ink)[#tagline]
   ]
   v(4pt)
   line(length: 100%, stroke: 0.75pt + accent)
@@ -28,15 +28,15 @@
 }
 
 #let section(title) = {
-  v(4.6pt)
+  v(8pt)
   grid(
     columns: (auto, 1fr),
     column-gutter: 6pt,
     align: horizon,
-    text(size: 10.7pt, weight: "bold", fill: accent)[#upper(title)],
+    text(size: 11.7pt, weight: "bold", fill: accent)[#upper(title)],
     line(length: 100%, stroke: 0.45pt + rule),
   )
-  v(1.8pt)
+  v(3pt)
 }
 
 #let entry(title, meta: none) = {
@@ -48,7 +48,7 @@
       column-gutter: 8pt,
       align: horizon,
       text(weight: "bold")[#title],
-      text(size: 9.1pt, fill: muted)[#meta],
+      text(size: 9.8pt, fill: muted)[#meta],
     )
   }
 }
@@ -60,4 +60,4 @@
   text(size: 8.75pt, fill: muted, body),
 )
 
-#let compact(body) = text(size: 9.2pt, body)
+#let compact(body) = text(size: 10.1pt, body)

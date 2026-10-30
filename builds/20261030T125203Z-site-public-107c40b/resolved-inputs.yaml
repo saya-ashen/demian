@@ -1,0 +1,36 @@
+artifact_requirements:
+  purpose: Public research website and one-page resume
+  audience: Ph.D. supervisors and research/engineering collaborators
+  language: en
+  output_path: generated/site-content.md
+policy:
+  source_read_only: true
+  publication_requires_human_review: true
+  public_email_approval: User approved exact address in current conversation
+  private_sources_not_copied: true
+build_inputs:
+  - path: AGENTS.md
+    sha256: 8483c1383b0545555123c957108110dc3513aadb3d96bfbd3752a153f5e70726
+  - path: README.md
+    sha256: 8341c726d154799ea1b2c601ba6e181b60da0c20049c8609d291a30dd14a60ec
+  - path: artifact.yaml
+    sha256: a3d0b33c74a5418e097b7489fc4ea9dfec47597ca07e67732dfffb7a51358887
+  - path: spec/website.md
+    sha256: 6cd4c5c285677b2de75c17402ce592c45b2022c50d56d5f21bca894cf738f866
+templates:
+  - path: src/content.config.ts
+    sha256: dd945a00d1fa40af4d2ab95e40e5af529238912d9ce44f36bb4bdea42eb12cb9
+  - path: src/pages/index.astro
+    sha256: 88b381fa059c5a1eaab1d079492b69f8eccddc6ed8154beb4d2be435377cce65
+  - path: src/pages/research.astro
+    sha256: fb82eefe4dc2b7325e6281fc88ef7d6b836096e4be093b1e46dc5a721557d6eb
+  - path: src/layouts/Layout.astro
+    sha256: 7a3fb4c6b3de40172438c7cd0fd6cd4d07dfa7c688d4ecebfc8b10b3499f7ca1
+  - path: src/styles/global.css
+    sha256: cc79420cff1d0175df93b735095db7c7742af7c950dfc919cc31011ee22fd535
+  - path: templates/public-resume-layout.typ
+    sha256: cf2e36de31b5e735c3ad99425cbcbb930b7521c3d13a17b9e0d80e4333360c38
+prior_artifact:
+  role: style-and-diff-only
+  sha256: 8b36a84634366b39decbbe86eab9511a0484e220db8f84515405240a646386fc
+source_migration: User approved career-ops as factual authority in current conversation

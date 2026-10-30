@@ -1,0 +1,151 @@
+{
+  "profile": {
+    "site": {
+      "title": "Demian Kong",
+      "description": "Demian Kong builds growing agent platforms and scientific AI systems, with a focus on reusable capabilities and verified tool use.",
+      "navigation": [
+        { "label": "About", "href": "/about" },
+        { "label": "Research", "href": "/research" },
+        { "label": "Experience", "href": "/experience" },
+        { "label": "Resume", "href": "/content-assets/resume-en.pdf" },
+        { "label": "Contact", "href": "/contact" }
+      ]
+    },
+    "home": {
+      "title": "Home",
+      "name": "Demian Kong",
+      "eyebrow": "AI agents · Scientific systems",
+      "headline": "Growing agent platforms. Verified scientific tool use.",
+      "portrait": { "src": "content-assets/profile-portrait.webp", "alt": "Portrait of Demian Kong" },
+      "bio": "I build systems that turn human needs into executable, reusable capabilities. My work spans scientific database agents and Chrona, a local-first platform where agents create and revise software modules that persist beyond a single conversation.",
+      "researchQuestion": "How can agents turn changing human needs into lasting capabilities—and keep those capabilities useful as their platform evolves?",
+      "highlightsHeading": "Research direction",
+      "highlights": [
+        "Creator and sole developer of Chrona: a growing software platform for humans and agents.",
+        "Founder and lead developer of Dingent: tool-using agents across eight CNCB biological data resources.",
+        "Co-first author of two Nucleic Acids Research papers; first-listed co-first author of the Dingent bioRxiv preprint."
+      ],
+      "quickLinksHeading": "Explore the work",
+      "quickLinks": [
+        { "label": "Projects and Publications", "href": "/research" },
+        { "label": "Research and Systems Experience", "href": "/experience" },
+        { "label": "Background and Research Questions", "href": "/about" }
+      ]
+    },
+    "about": {
+      "title": "About",
+      "intro": "I am a bioinformatics M.S. graduate and systems builder working on LLM agents, growing software platforms, and scientific data access. My path from pharmacy and experimental biology to multi-omics analysis and agent engineering shapes the questions I pursue: how to connect domain meaning, executable actions, and evidence.",
+      "educationHeading": "Education",
+      "education": [
+        {
+          "institution": "University of Chinese Academy of Sciences (UCAS) / CNCB",
+          "summary": "M.S. in Bioinformatics · September 2023 – June 2026",
+          "details": [
+            "Thesis: Research and Development of an Agent Framework for Bioinformatics Data Retrieval Based on Large Language Models.",
+            "Research connected configurable agent workflows, biological database retrieval, and query verification."
+          ]
+        },
+        {
+          "institution": "Jilin University",
+          "summary": "B.S. in Pharmacy · September 2019 – June 2023",
+          "details": [
+            "Thesis research on the role and mechanism of MKP5 in hepatic fibrosis, combining experimental models with bioinformatic analysis.",
+            "Led a provincial undergraduate innovation project in chemical synthesis and crystallography."
+          ]
+        }
+      ],
+      "interestsHeading": "Research questions",
+      "interests": [
+        "Capability growth: how can agents extend a software platform to meet changing human needs with persistent, reusable modules?",
+        "Verified tool use: how can executable checks keep agent claims within the scope of retrieved evidence and tool execution?",
+        "Evaluation over time: how can query verification, oracle-free consistency checks, and cross-version tests assess more than isolated task success?",
+        "Scientific AI: how can domain-aware retrieval and protein–language modelling connect biological data with useful computational tools?"
+      ],
+      "toolkitHeading": "Selected toolkit",
+      "toolkit": [
+        "Agent systems: LangGraph, MCP, checkpointed workflows, SQL AST validation",
+        "Machine learning: PyTorch, Hugging Face Transformers, LoRA / QLoRA, contrastive training",
+        "Software: Python, TypeScript, SQL, FastAPI, React / Next.js, Docker, Nix, Linux",
+        "Scientific methods: transcriptome and DNA-methylation analysis, GO/KEGG enrichment, biological database development"
+      ],
+      "recognitionHeading": "Recognition",
+      "recognition": [
+        "UCAS Graduate Academic Scholarship, 2023, 2024, and 2025.",
+        "Project lead, Provincial Undergraduate Innovation Training Program, Jilin University; completed 2022."
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "intro": "I am seeking Ph.D. opportunities and research collaborations in AI agents, growing software platforms, and scientific AI.",
+      "items": [
+        { "label": "Email", "value": "demian.kong.ai@gmail.com", "href": "mailto:demian.kong.ai@gmail.com" },
+        { "label": "GitHub", "value": "github.com/saya-ashen", "href": "https://github.com/saya-ashen", "external": true }
+      ],
+      "note": "I am particularly interested in capability creation and reuse, verified scientific tool use, and evaluation across changing tasks and software versions."
+    },
+    "experience": {
+      "title": "Experience",
+      "entries": [
+        {
+          "organization": "Chrona",
+          "summary": "Creator & Sole Developer · Independent open-source project · 2026 – Present",
+          "highlights": [
+            "Building a local-first platform where agents turn human needs into persistent, reusable software modules.",
+            "Implemented iterative build sessions, content-addressed versions, tests, platform-owned execution probes, and migration checks on data copies.",
+            "Bound activation to reviewed versions, with conditional updates under existing user authorization."
+          ]
+        },
+        {
+          "organization": "Dingent · NGDC, CNCB",
+          "summary": "Founder & Lead Developer · M.S. thesis project · 2025 – June 2026",
+          "highlights": [
+            "Designed and implemented a configurable agent framework integrating eight CNCB biological data resources through MCP plugins.",
+            "Compiled visually configured workflows into checkpointed LangGraph state graphs, preserving structured entities and database/species scope across tool calls.",
+            "First-listed co-first author of the bioRxiv preprint. Architecture and open-source development through June 2026; technical support after graduation."
+          ]
+        },
+        {
+          "organization": "EWAS AI Assistant · NGDC, CNCB",
+          "summary": "Technical Lead & Developer of the AI assistant · 2024 – 2025",
+          "highlights": [
+            "Built the natural-language AI assistant for EWAS Open Platform, combining entity-enhanced schema linking, AST-level SQL validation, and execution-guided repair.",
+            "Designed a 30-question expert-reviewed evaluation with manually verified reference SQL over a fixed system version and database snapshot.",
+            "Co-first author of EWAS Open Platform 2026 in Nucleic Acids Research."
+          ]
+        },
+        {
+          "organization": "ProLLaVA",
+          "summary": "Independent protein–language model project · October 2024 – February 2025",
+          "highlights": [
+            "Connected an ESM2 protein sequence encoder to Llama-3-8B using UniProt sequence–function data, with computing resources provided by my advisor.",
+            "Ran projector pretraining, 4-bit LoRA fine-tuning, and protein–text contrastive training; explored nonlinear projection in an exploratory prototype."
+          ]
+        },
+        {
+          "organization": "iDog & Scientific Data Applications · NGDC, CNCB",
+          "summary": "Co-first Author & Application Developer · 2023 – June 2026",
+          "highlights": [
+            "Performed canine transcriptome and DNA-methylation analysis for iDog and developed the DogRAG retrieval assistant.",
+            "Built the GSA submission-data retrieval application and Smart submission-consultation RAG plugin; contributed to BioKA biomarker curation.",
+            "Co-first author of iDog in Nucleic Acids Research; co-author of BioKA and contributor to NGDC consortium publications."
+          ]
+        },
+        {
+          "organization": "Jilin University",
+          "summary": "Undergraduate research · B.S. thesis, September 2022 – June 2023; innovation project completed 2022",
+          "highlights": [
+            "Investigated MKP5 in hepatic fibrosis through mouse and cell models, histology, Western blot, qPCR, and GO/KEGG enrichment analysis.",
+            "Led a provincial undergraduate innovation project in chemical synthesis and crystallography."
+          ]
+        }
+      ]
+    },
+    "research": {
+      "title": "Research",
+      "intro": "I build agent systems that connect intent, software capabilities, and scientific evidence. My current focus is how platforms can grow through agent-authored modules, building on earlier work in configurable database agents and verified Text-to-SQL.",
+      "projectsHeading": "Selected projects",
+      "publicationsHeading": "Publications & preprints",
+      "publicationsNote": "† Equal contribution / co-first author. Dingent is a bioRxiv preprint. The iDog author markers reflect the official correction. Project evaluation descriptions on this page refer to project/thesis evidence, not journal-reported performance results."
+    }
+  }
+}

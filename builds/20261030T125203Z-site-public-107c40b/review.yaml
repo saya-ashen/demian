@@ -1,0 +1,11 @@
+version: 1
+build_id: 20261030T125203Z-site-public-107c40b
+status: pending
+reviewer: null
+reviewed_at: null
+checks:
+  facts: pending
+  privacy: pending
+  presentation: pending
+notes:
+  - Local-only draft; no publication authorization.

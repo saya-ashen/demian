@@ -3,7 +3,7 @@ version: 1
 artifact:
   name: demian-personal-website
   type: website
-  purpose: Public personal research and engineering website derived from the LLM Wiki.
+  purpose: Public personal research and engineering website derived from career-ops primary records.
   audience: Research collaborators, Ph.D. admissions readers, and AI engineering collaborators.
   language: en
   draft: generated/site-content.md
@@ -13,23 +13,22 @@ artifact:
     - generated/public-resume-en.pdf
 
 knowledge_source:
-  path: /home/saya/workspace/llm-wiki-agent
-  repository: https://github.com/saya-ashen/llm-wiki-agent
-  revision: main
+  path: ../../career-ops
+  revision: working-tree
   mode: read-only
-  index:
-    - wiki/index.md
-    - wiki/overview.md
-    - wiki/log.md
-  preferred_layers:
-    - wiki
-    - raw
+  primary_files:
+    - cv.md
+    - article-digest.md
+    - config/profile.yml
+    - modes/_profile.md
+  procedural_files:
+    - modes/_custom.md
 
 selectors:
   include:
-    - public professional profile facts from wiki entities and reviewed sources
+    - public professional profile facts from career-ops primary records
     - completed or active projects with explicit current-status wording
-    - publication records supported by wiki source pages
+    - publication records supported by cv.md and article-digest.md
     - education and experience facts with explicit dates/status
     - contact details only after exact-value approval for the public repository and website
     - user-approved IELTS results and project evaluation claims after admission to the knowledge source
@@ -69,11 +68,10 @@ presentation:
   template: Astro content collections and existing site layout
   tone: clear, concise, technically specific
   emphasis:
-    - AI agents and LLM systems
-    - reliable execution and tool-driven workflows
-    - scientific AI and bioinformatics
-    - current Chrona development
-    - historically bounded NGDC, Dingent, and EWAS work
+    - growing platforms for humans and agents
+    - verified tool use and scientific data systems
+    - persistent reusable capabilities in current Chrona development
+    - historically bounded NGDC, Dingent, and EWAS contributions
   public_resume:
     source: generated/public-resume-en.md
     render_source: generated/public-resume-en.typ
@@ -91,6 +89,7 @@ policy:
 validation:
   require_clean_source: false
   revision_mode: snapshot-hash
+  source_selection_authorization: User requested current career-ops records on 2026-10-30.
   fail_on_unsupported_claims: true
   fail_on_private_content: true
   fail_on_source_mutation: true

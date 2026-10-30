@@ -1,0 +1,59 @@
+version: 1
+knowledge_source:
+  name: career-ops
+  path: ../../career-ops
+  branch: main
+  revision: e0126b731255e66aa1089783fcc117cc7118c448
+  base_revision: e0126b731255e66aa1089783fcc117cc7118c448
+  revision_mode: snapshot-hash
+  schema_version: career-ops-primary-files/v1
+  snapshot:
+    algorithm: sha256
+    scope: selected-primary-and-procedural-files
+    sha256: 107c40b3768988cab0da765cf128bc7b2927ce78d041ffeff38dd86e63d85c8a
+  working_tree:
+    clean: false
+    status_sha256: 9a6cd7e02ac16335c931e4f2a1431144fafe511deaac825f25744393e966ca8a
+    diff_sha256: 1885c7a4698a9035103c4fb7ac00781f888a9396ec6f4312fa47472aac3b60ee
+    untracked_path_count: 1840
+    untracked_inventory_sha256: 9c04dab2af291b516eec4e1ce43e2c2a458ff1b5a8c0452c04e73309c33aa390
+    dirty_path_count: 3
+    dirty_inventory_sha256: 3f16db919b52ec606ea013787b74b4ef4be9f274faea37ceb48a50211ae7ec4f
+concurrent_change:
+  final_status_sha256: 5de4e7f459ed579391a3228ccaa30e248a72936a9ff893470c10f64ec08b129a
+  selected_inputs_unchanged: true
+  tracked_diff_unchanged: true
+  user_decision: User approved completion from locked snapshot after concurrent browser artifacts were reported.
+  added_path_count: 15
+  added_inventory_sha256: f80dba85660b1f98176268e4cd801bb4ba07cfb06fa8859d07cf8c232248420c
+resolved_at: '2026-10-30T12:25:20Z'
+inputs:
+  - path: cv.md
+    sha256: 0d7d7cce4be8383bd0829f8ea800b710ae6e87f0681447dabbd5c92770accd77
+    id: career-ops:cv.md
+    role: fact_source
+    visibility: mixed-source-selected-public-facts-only
+  - path: article-digest.md
+    sha256: 684efe538abdc597764a42f0577ef8ba7e91ff7de1794e9827d0708b65480458
+    id: career-ops:article-digest.md
+    role: fact_source
+    visibility: mixed-source-selected-public-facts-only
+  - path: config/profile.yml
+    sha256: 5e260c09a3af96790a0d6aab9586c2974331c14016dcc7a96418d72e6884d410
+    id: career-ops:config/profile.yml
+    role: fact_source
+    visibility: mixed-source-selected-public-facts-only
+  - path: modes/_profile.md
+    sha256: 20bd1cf52875205f2da19163691b1fa9b93801eb25efe9cb49540ae3d55e5691
+    id: career-ops:modes/_profile.md
+    role: fact_source
+    visibility: mixed-source-selected-public-facts-only
+  - path: modes/_custom.md
+    sha256: deccbed06f7eb34f23d6af91fa8f77c8af960e5e85aaeb92c304bcaad5b28c35
+    id: career-ops:modes/_custom.md
+    role: procedural
+    visibility: mixed-source-selected-public-facts-only
+indexes: []
+publication_privacy: >-
+  User authorized excluding unrelated local path inventories from public records; selected source paths and
+  hashes retained. Full inventories retained only in local uncommitted scratch.

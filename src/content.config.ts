@@ -18,6 +18,8 @@ const profile = defineCollection({
 			title: z.string(),
 			name: z.string(),
 			headline: z.string(),
+			eyebrow: z.string(),
+			researchQuestion: z.string(),
 			portrait: z.object({
 				src: z.string(),
 				alt: z.string(),
@@ -87,6 +89,7 @@ const projects = defineCollection({
 		role: z.string(),
 		period: z.string(),
 		description: z.string(),
+		highlights: z.array(z.object({ label: z.string(), text: z.string() })),
 		links: z.array(linkSchema).default([]),
 	}),
 });

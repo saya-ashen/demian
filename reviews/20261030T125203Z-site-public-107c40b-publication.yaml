@@ -1,0 +1,17 @@
+version: 1
+type: artifact-publication
+build_id: 20261030T125203Z-site-public-107c40b
+review_event: reviews/20261030T125203Z-site-public-107c40b-approval.yaml
+review_event_sha256: 1d72c67e707e2eb757f39ddf285deea620e47db283bb70b401749a5de9d0df59
+published_at: '2026-10-30T12:52:03.331Z'
+publication_scope: approved-repository-release-awaiting-GitHub-Pages
+published_outputs:
+  - path: published/site-content.md
+    sha256: 24e89b44427e1e7be45b162a31e6535af10280a58e344c31522bdb069cfc0444
+  - path: published/public-resume-en.md
+    sha256: f4d065498fb0ad38a94a7adb2b5eee2c6b64d0503de0450000dc0f5a75e5bafb
+  - path: published/public-resume-en.pdf
+    sha256: 305e3d13cb7c12a03eeca50e0ceb1d85ec07336a58054608cec79bcfa62cc9e5
+  - path: public/content-assets/resume-en.pdf
+    sha256: 305e3d13cb7c12a03eeca50e0ceb1d85ec07336a58054608cec79bcfa62cc9e5
+deployment_status: pending

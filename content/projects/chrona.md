@@ -1,12 +1,17 @@
 ---
 order: 1
-title: "Chrona: Local-First AI Work Executor"
-role: "Current application development"
-period: "Active development"
-description: "A local-first AI work executor that turns tasks into planned, scheduled, executable, and inspectable work through the loop Task → Plan → Schedule → Execute → Review/Recover. The product emphasizes approval boundaries, observable execution state, recoverable failures, and preserved results/evidence. Version 0.3.1 is the current public alpha release; the project is not presented as stable production software."
+title: "Chrona: A Growing Platform for Humans and Agents"
+role: "Creator & Sole Developer"
+period: "2026 – Present"
+description: "A local-first platform where agents create and revise persistent software modules in response to human needs, turning individual requests into reusable capabilities."
+highlights:
+  - label: "Capabilities"
+    text: "Modules combine event-driven execution, persistent data, scheduled work, and routed tool calls."
+  - label: "Contribution"
+    text: "Implemented iterative build sessions, content-addressed versions, tests, platform-owned execution probes, and migration checks on data copies. Activation is bound to a reviewed version, with conditional updates under existing user authorization."
+  - label: "Research direction"
+    text: "How can new capabilities compose and remain useful as needs and platform versions change?"
 links:
-  - label: "GitHub Repository"
+  - label: "Source code"
     href: "https://github.com/saya-ashen/Chrona"
-  - label: "v0.3.1 Release"
-    href: "https://github.com/saya-ashen/Chrona/releases/tag/v0.3.1"
 ---

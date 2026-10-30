@@ -1,28 +1,32 @@
 # Website build specification
 
-This website is a public, English-language derivative of the read-only LLM Wiki. The Wiki is the sole factual authority. Existing website files may guide layout and continuity only; they are not evidence.
+## Authority and audience
 
-## Selection
+The public English-language site serves prospective Ph.D. supervisors, research collaborators, and engineering collaborators. The user authorized a source migration on 2026-10-30: career-ops primary files (`cv.md`, `article-digest.md`, `config/profile.yml`, `modes/_profile.md`) are now the factual authority. `modes/_custom.md` supplies style and procedure only. The source is read-only; current selected-file hashes, including ignored user-layer files, define the snapshot. Prior website and Wiki builds are historical artifacts, not evidence for this build.
 
-Include current and historical facts explicitly recorded in the Wiki's entity, concept, and reviewed source pages. Current-status updates supersede historical CV wording. Preserve exact distinctions between current development, completed work, transferred ownership, technical support, contribution, and authorship.
+## Selection and framing
+
+Lead with growing platforms for humans and agents, verified scientific tool use, and reusable capabilities. Present Chrona's current module-based implementation, not its historical v0.3.1 release. Verification and approval mechanisms support platform growth rather than replacing its purpose. Separate research questions from demonstrated features.
+
+Preserve role, authorship, dates, and project boundaries. Dingent development ran from 2025 through June 2026, with technical support thereafter. EWAS AI Assistant development ran during 2024–2025. Mark the Dingent paper as a preprint and co-first authorship explicitly. Do not imply acceptance of a manuscript under revision.
 
 ## Public privacy policy
 
-Only use public professional links and public-facing project or publication facts. Contact details, language-test results, and unpublished project evaluations may be included only after the user approves the exact facts for the public repository and website and the facts are admitted to the knowledge source. The user approved publication of IELTS 7.0 and the specified EWAS and Dingent evaluation claims on 2026-09-03. Exclude all other unapproved application emails, school emails, phone numbers, date of birth, address, citizenship, referee records, mobility information, and private application data. Exclude GPA and rank unless separately approved for public release. Do not infer Chrona's start date, formal title, employer, users, deployment, or adoption.
+Use only selected public professional information; do not copy source documents into this public repository. The user explicitly approved `demian.kong.ai@gmail.com` for the website and public resume on 2026-10-30. Exclude other contact records, referee records, addresses, birth dates, application status/strategy, verification identifiers, GPA/rank, and unapproved unpublished evaluations. Pi Mesh and Chrona prototype experiment findings are excluded pending separate disclosure approval. Do not disclose the manuscript's private revision status. Omit language-test scores because they do not strengthen this research overview.
 
-## Required content coverage
+Retain only previously approved project metrics when useful. This build foregrounds method and evaluation design rather than raw accuracy/latency. The EWAS 30-question reference-SQL benchmark is project/thesis evidence, not a journal-reported performance result.
 
-- Home: current identity, current research/engineering direction, and current project.
-- About: completed education, transcript-backed course/credit summary, trajectory, and research interests.
-- Experience: current post-graduation status and bounded historical timeline.
-- Research: Chrona, Dingent, EWAS AI Assistant, the Dingent preprint, the verified publication record, and the source-supported publication list.
-- Contact: public GitHub, any exact-address email approved for public release, and collaboration/application direction without other private contact fields.
-- Public resume: one-page English PDF with the same public-release boundary, current Chrona v0.3.1 status, qualified project metrics, first-author preprint, and both joint-first-author publications.
+## Required content
 
-Project metrics must be labeled as project/thesis evaluation evidence and must not be presented as journal-reported results. Dingent wording must preserve the June 2026 handover and avoid implying post-handover control of CNCB resources.
+- Home: concise identity, a distinct research question, and evidence-backed highlights.
+- About: education, research trajectory, research interests, and selected technical preparation; no transcript administration details.
+- Experience: bounded project contributions and education/research timeline.
+- Research: Chrona, Dingent, EWAS, selected complementary public work, and source-supported publications.
+- Contact: approved email, GitHub, and Ph.D./research collaboration direction.
+- Public resume: one-page English PDF, synchronized with the selected website claims. User requested a more spacious presentation: 11pt body, 10.1pt publication text, increased line/paragraph spacing, and 8pt section spacing; retain the factual content rather than padding it.
 
-## Validation commands
+## Local delivery and validation
 
-- `npm run build`
-- `git diff --check`
-- `rg` checks for stale status, private fields, and source-only warnings in public content.
+Update `content/`, necessary templates, `generated/`, and the local website resume asset. Preserve `published/`, all previous builds, and review events. Do not commit, push, or deploy. A later publication requires exact-build human approval.
+
+Run `npm run build`, `git diff --check`, source-snapshot comparison, claim/source checks, public-content privacy and stale-wording checks, PDF extraction/render review, and desktop/mobile browser checks. Record skipped or failed checks honestly.

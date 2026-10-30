@@ -1,10 +1,17 @@
 ---
 order: 3
-title: "EWAS AI Assistant"
-role: "Historical Developer"
-period: "2024 – June 2026"
-description: "A natural-language data-access system for the EWAS Open Platform, developed during the NGDC/UCAS M.S. period. Its workflow connects biomedical entity retrieval, schema-constrained Text-to-SQL, execution-based verification and correction, answer synthesis, and interactive visualization. On 30 expert-reviewed questions with manually verified reference SQL, it achieved 76.7% strict accuracy and 83.3% fully-or-partially-correct accuracy. These are project/thesis evaluation results; personal work ended at graduation."
+title: "EWAS AI Assistant: Verified Scientific Queries"
+role: "Technical Lead & Developer of the AI assistant"
+period: "2024 – 2025"
+description: "The natural-language AI assistant for EWAS Open Platform, connecting biomedical questions to database queries and verifiable execution."
+highlights:
+  - label: "Contribution"
+    text: "Combined entity-enhanced schema linking, AST-level SQL validation, and an execution-guided loop that turns database errors into bounded query repairs."
+  - label: "Evaluation"
+    text: "Designed a 30-question expert-reviewed benchmark with manually verified reference SQL over a fixed system version and database snapshot, covering retrieval, aggregation, filtering, and multi-table reasoning."
+  - label: "Publication"
+    text: "Co-first author of EWAS Open Platform 2026 in Nucleic Acids Research."
 links:
-  - label: "NGDC BioAgent Portal"
-    href: "https://ngdc.cncb.ac.cn/bioagent/#/"
+  - label: "Paper"
+    href: "https://doi.org/10.1093/nar/gkaf1155"
 ---
