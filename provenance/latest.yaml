@@ -19,7 +19,10 @@ review:
   event: reviews/20261030T125203Z-site-public-107c40b-approval.yaml
   event_sha256: 1d72c67e707e2eb757f39ddf285deea620e47db283bb70b401749a5de9d0df59
 publication:
-  status: approved-awaiting-deployment
+  status: deployed
   event: reviews/20261030T125203Z-site-public-107c40b-publication.yaml
   event_sha256: b185386ff0df7ed44706a796e9cdc61b336beb19093a68bf1d1bc261ec57e7fc
   site_url: https://saya-ashen.github.io/demian/
+  deployment_event: reviews/20261030T125203Z-site-public-107c40b-deployment.yaml
+  deployment_event_sha256: 3ee4a66da421b714fa47fad38e646b417c6954f515d412664ac1a7862bb2e5ec
+  workflow_url: https://github.com/saya-ashen/demian/actions/runs/41058656140

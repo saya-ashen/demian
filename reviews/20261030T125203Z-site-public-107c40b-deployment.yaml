@@ -1,0 +1,14 @@
+version: 1
+type: artifact-deployment
+build_id: 20261030T125203Z-site-public-107c40b
+deployed_commit: 0940a102896f3adab7c94f99dc0f2d3128195953
+workflow_url: https://github.com/saya-ashen/demian/actions/runs/41058656140
+status: success
+verified_at: '2026-10-30T12:53:31.595Z'
+site_url: https://saya-ashen.github.io/demian/
+verified_routes:
+  - /
+  - /research/
+  - /contact/
+resume_sha256: 305e3d13cb7c12a03eeca50e0ceb1d85ec07336a58054608cec79bcfa62cc9e5
+resume_matches_approved_artifact: true
